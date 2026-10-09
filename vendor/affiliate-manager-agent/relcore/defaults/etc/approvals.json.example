@@ -1,0 +1,5 @@
+{
+  "_doc": "Root-owned (/etc/relcore/approvals.json). Where approval cards are posted and how long a signed approval stays valid.",
+  "slack_channel": "C0XXXXXXX",
+  "approval_valid_hours": 24
+}

@@ -1,0 +1,329 @@
+{
+  "_doc": "Per-business slot schema. Copy to private-business/relationship/config/profile-schema.json to change it. Each slot names the card (entity) it belongs to, so remember() routes a fact to the person, the partner organization or the revenue partnership. sources = where a fact may come from; not_from_model = slots only systems of record or the owner set; never_store = categories refused on every write path.",
+  "version": 1,
+  "key_slots": {
+    "person": [
+      "role",
+      "preferred_channel",
+      "best_time"
+    ],
+    "partner": [
+      "partner_kind",
+      "audience",
+      "audience_size",
+      "promo_channels",
+      "niche",
+      "region",
+      "goals",
+      "what_would_help"
+    ],
+    "partnership": [
+      "offers_fit",
+      "next_step"
+    ]
+  },
+  "slots": {
+    "role": {
+      "entity": "person",
+      "section": "Profile",
+      "multi": false,
+      "sources": [
+        "record",
+        "reply",
+        "call",
+        "research"
+      ]
+    },
+    "preferred_channel": {
+      "entity": "person",
+      "section": "How to work with them",
+      "multi": false,
+      "sources": [
+        "reply",
+        "call",
+        "record"
+      ],
+      "normalize": "channel",
+      "question": "Is text or email easier for you?"
+    },
+    "best_time": {
+      "entity": "person",
+      "section": "How to work with them",
+      "multi": false,
+      "sources": [
+        "reply",
+        "call"
+      ],
+      "normalize": "daypart"
+    },
+    "tone": {
+      "entity": "person",
+      "section": "How to work with them",
+      "multi": false,
+      "sources": [
+        "reply",
+        "call",
+        "owner"
+      ]
+    },
+    "personal": {
+      "entity": "person",
+      "section": "How to work with them",
+      "multi": true,
+      "sources": [
+        "reply",
+        "call"
+      ],
+      "volunteered_only": true
+    },
+    "partner_kind": {
+      "entity": "partner",
+      "section": "Who they reach",
+      "multi": false,
+      "sources": [
+        "record",
+        "reply",
+        "call",
+        "research"
+      ],
+      "question": "Quick one so I point you to the right stuff: do you mostly create content, run an agency, or refer clients directly?"
+    },
+    "audience": {
+      "entity": "partner",
+      "section": "Who they reach",
+      "multi": true,
+      "sources": [
+        "record",
+        "reply",
+        "call",
+        "research"
+      ],
+      "question": "Who are you mostly working with these days?"
+    },
+    "audience_size": {
+      "entity": "partner",
+      "section": "Who they reach",
+      "multi": false,
+      "sources": [
+        "reply",
+        "call",
+        "research"
+      ],
+      "normalize": "count"
+    },
+    "promo_channels": {
+      "entity": "partner",
+      "section": "Who they reach",
+      "multi": true,
+      "sources": [
+        "reply",
+        "call",
+        "research",
+        "record"
+      ],
+      "hub": "PromoChannels"
+    },
+    "niche": {
+      "entity": "partner",
+      "section": "Who they reach",
+      "multi": true,
+      "sources": [
+        "record",
+        "reply",
+        "call",
+        "research"
+      ],
+      "hub": "Niches"
+    },
+    "region": {
+      "entity": "partner",
+      "section": "Who they reach",
+      "multi": true,
+      "sources": [
+        "record",
+        "reply",
+        "call",
+        "research"
+      ],
+      "normalize": "region",
+      "hub": "Regions"
+    },
+    "website": {
+      "entity": "partner",
+      "section": "Who they reach",
+      "multi": false,
+      "sources": [
+        "record",
+        "research",
+        "reply"
+      ]
+    },
+    "goals": {
+      "entity": "partner",
+      "section": "What they want",
+      "multi": true,
+      "sources": [
+        "reply",
+        "call"
+      ],
+      "question": "What are you working toward going into next quarter?"
+    },
+    "what_would_help": {
+      "entity": "partner",
+      "section": "What they want",
+      "multi": true,
+      "sources": [
+        "reply",
+        "call"
+      ],
+      "question": "What would make referring us easier for you?"
+    },
+    "blockers": {
+      "entity": "partner",
+      "section": "What they want",
+      "multi": true,
+      "sources": [
+        "reply",
+        "call"
+      ]
+    },
+    "objections": {
+      "entity": "partner",
+      "section": "What they want",
+      "multi": true,
+      "sources": [
+        "reply",
+        "call"
+      ]
+    },
+    "offers_fit": {
+      "entity": "partnership",
+      "section": "Partner plan",
+      "multi": true,
+      "sources": [
+        "call",
+        "plan",
+        "owner"
+      ],
+      "hub": "Offers"
+    },
+    "next_step": {
+      "entity": "partnership",
+      "section": "Program",
+      "multi": false,
+      "sources": [
+        "call",
+        "plan",
+        "reply",
+        "owner"
+      ]
+    },
+    "situations": {
+      "entity": "partnership",
+      "section": "Partner plan",
+      "multi": true,
+      "sources": [
+        "call",
+        "plan"
+      ]
+    },
+    "tier": {
+      "entity": "partnership",
+      "section": "Record",
+      "multi": false,
+      "sources": [
+        "record"
+      ],
+      "hub": "Tiers"
+    },
+    "joined": {
+      "entity": "partnership",
+      "section": "Record",
+      "multi": false,
+      "sources": [
+        "record"
+      ]
+    },
+    "lifecycle": {
+      "entity": "partnership",
+      "section": "Record",
+      "multi": false,
+      "sources": [
+        "record"
+      ]
+    },
+    "segment": {
+      "entity": "partnership",
+      "section": "Record",
+      "multi": false,
+      "sources": [
+        "record"
+      ]
+    },
+    "production_stage": {
+      "entity": "partnership",
+      "section": "Record",
+      "multi": false,
+      "sources": [
+        "record"
+      ]
+    },
+    "link": {
+      "entity": "partnership",
+      "section": "Record",
+      "multi": false,
+      "sources": [
+        "record",
+        "owner"
+      ]
+    },
+    "code": {
+      "entity": "partnership",
+      "section": "Record",
+      "multi": false,
+      "sources": [
+        "record",
+        "owner"
+      ]
+    },
+    "conversions": {
+      "entity": "partnership",
+      "section": "Record",
+      "multi": false,
+      "sources": [
+        "record"
+      ],
+      "normalize": "count"
+    },
+    "last_conversion": {
+      "entity": "partnership",
+      "section": "Record",
+      "multi": false,
+      "sources": [
+        "record"
+      ]
+    }
+  },
+  "not_from_model": [
+    "tier",
+    "joined",
+    "lifecycle",
+    "segment",
+    "production_stage",
+    "link",
+    "code",
+    "conversions",
+    "last_conversion"
+  ],
+  "never_store": [
+    "health",
+    "religion",
+    "politics",
+    "sexual_orientation",
+    "account_numbers",
+    "government_ids",
+    "passwords",
+    "payment_cards",
+    "minors"
+  ]
+}

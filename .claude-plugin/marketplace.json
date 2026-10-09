@@ -1,0 +1,13 @@
+{
+  "name": "james-camp-gtm",
+  "owner": {
+    "name": "AI Guy"
+  },
+  "plugins": [
+    {
+      "name": "james-camp-ai-guy-gtm",
+      "source": "./",
+      "description": "Cold email, CRM conversations and contextual follow-through"
+    }
+  ]
+}

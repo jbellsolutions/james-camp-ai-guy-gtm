@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "enabled": true,
+  "max_active_named_profiles": 8,
+  "persistent_activation_requires_human_approval": true,
+  "allowed_template_ids": [
+    "prospect-research",
+    "outbound-campaign",
+    "content-distribution",
+    "affiliate-partnerships"
+  ],
+  "never_exposed_as_factory_tools": [
+    "delete-profile",
+    "delete-data",
+    "provision-computer",
+    "resize-computer",
+    "change-billing",
+    "grant-credential",
+    "change-permissions",
+    "change-policy",
+    "trust-peer",
+    "arbitrary-command"
+  ]
+}

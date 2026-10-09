@@ -1,0 +1,8 @@
+crm_id,first_name,last_name,email,phone,company_domain,title,city,state,tags,source,consent_email,consent_sms,internal,notes
+c-riley,Riley,Moore,riley@northwindgear.example.com,303-555-0100,northwindgear.example.com,Partnerships lead,Denver,CO,staff,owner,,,yes,
+c-ava,Ava,Brooks,ava@trailnotes.example.com,303-555-0110,trailnotes.example.com,Editor,Boulder,CO,affiliate,crm,existing_relationship,,no,Runs a hiking gear blog
+c-marco,Marco,Silva,marco@packreview.example.com,312-555-0111,packreview.example.com,Founder,Chicago,IL,affiliate,crm,existing_relationship,express,no,
+c-jen,Jen,Okafor,jen@summitletter.example.com,213-555-0112,summitletter.example.com,Writer,Los Angeles,CA,affiliate,crm,existing_relationship,,no,Weekly newsletter for trail runners
+c-luis,Luis,Ortega,luis@campdeals.example.com,704-555-0113,campdeals.example.com,Deals editor,Charlotte,NC,affiliate,crm,existing_relationship,,no,
+c-kim,Kim,Tran,kim@ridgecrew.example.com,303-555-0114,ridgecrew.example.com,Community host,Denver,CO,affiliate,crm,existing_relationship,express,no,
+c-owen,Owen,Price,owen@owenprice.example.com,312-555-0115,owenprice.example.com,Customer,Chicago,IL,customer,crm,existing_relationship,,no,Bought three tents

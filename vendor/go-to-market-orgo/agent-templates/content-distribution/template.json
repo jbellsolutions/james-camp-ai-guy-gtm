@@ -1,0 +1,8 @@
+{
+  "template_id": "content-distribution",
+  "default_profile_name": "content-distribution",
+  "display_name": "Content Distribution",
+  "description": "Turns approved ideas into channel-specific drafts and a measurable distribution plan.",
+  "capabilities": ["content-planning", "repurposing", "distribution"],
+  "toolsets": ["file", "web", "memory", "skills", "todo", "kanban", "a2a", "clarify", "vision"]
+}

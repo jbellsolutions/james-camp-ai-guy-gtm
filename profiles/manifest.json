@@ -1,0 +1,131 @@
+[
+  {
+    "id": "gtm-director",
+    "install": "cold-email",
+    "title": "Campaign Director",
+    "skills": [
+      "gtm-workflow",
+      "cold-email-master"
+    ],
+    "optional": false
+  },
+  {
+    "id": "gtm-data",
+    "install": "cold-email",
+    "title": "Data & Research",
+    "skills": [
+      "gtm-workflow",
+      "lead-sourcing"
+    ],
+    "optional": false
+  },
+  {
+    "id": "gtm-list",
+    "install": "cold-email",
+    "title": "List & Verification",
+    "skills": [
+      "gtm-workflow"
+    ],
+    "optional": false
+  },
+  {
+    "id": "gtm-writer",
+    "install": "cold-email",
+    "title": "Custom Email Writer",
+    "skills": [
+      "gtm-workflow",
+      "cold-email-master"
+    ],
+    "optional": false
+  },
+  {
+    "id": "gtm-editorial",
+    "install": "cold-email",
+    "title": "Independent Editorial",
+    "skills": [
+      "gtm-workflow",
+      "cold-email-master"
+    ],
+    "optional": false
+  },
+  {
+    "id": "gtm-deliverability",
+    "install": "cold-email",
+    "title": "ESP & Deliverability",
+    "skills": [
+      "gtm-workflow",
+      "cold-email-master"
+    ],
+    "optional": false
+  },
+  {
+    "id": "gtm-sequencer",
+    "install": "cold-email",
+    "title": "Sequencer Operator",
+    "skills": [
+      "gtm-workflow",
+      "instantly-cold-email",
+      "smartlead-operations"
+    ],
+    "optional": false
+  },
+  {
+    "id": "gtm-replies",
+    "install": "cold-email",
+    "title": "Email Reply Agent",
+    "skills": [
+      "gtm-workflow",
+      "cold-email-master",
+      "instantly-cold-email",
+      "smartlead-operations"
+    ],
+    "optional": false
+  },
+  {
+    "id": "crm-agent-4",
+    "install": "conversations",
+    "title": "Agent 4 \u00b7 GoHighLevel Bridge",
+    "skills": [
+      "gtm-workflow",
+      "crm-conversations",
+      "gohighlevel-cli"
+    ],
+    "optional": false
+  },
+  {
+    "id": "relationship-manager",
+    "install": "conversations",
+    "title": "Relationship & SMS Manager",
+    "skills": [
+      "gtm-workflow",
+      "crm-conversations",
+      "gohighlevel-cli",
+      "affiliate-relationships"
+    ],
+    "optional": false
+  },
+  {
+    "id": "conversion-manager",
+    "install": "conversations",
+    "title": "Conversion & Follow-through",
+    "skills": [
+      "gtm-workflow",
+      "crm-conversations",
+      "gohighlevel-cli"
+    ],
+    "optional": false
+  },
+  {
+    "id": "affiliate-manager",
+    "install": "affiliate",
+    "title": "Optional Affiliate Manager",
+    "skills": [
+      "gtm-workflow",
+      "crm-conversations",
+      "gohighlevel-cli",
+      "affiliate-manager",
+      "affiliate-relationships"
+    ],
+    "optional": true
+  }
+]

@@ -1,0 +1,38 @@
+name: Template verification
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python -m pip install pyyaml
+      - run: ./orgo/verify.sh --static
+      - run: python -m unittest discover -s tests -v
+      - run: python tests/validate_links.py
+      - name: Parse YAML
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import yaml
+          for path in [Path("compose.yml"), Path("hermes/config.template.yaml"), Path("plugins/latitude-observer/plugin.yaml")]:
+              yaml.safe_load(path.read_text())
+          PY
+      - name: Render Compose
+        env:
+          AGENT_NAME: ci-agent
+          BASE_DIR: /tmp/ci-agent
+          FIREWORKS_API_KEY: fw_ci_not_a_secret
+          HERMES_DASHBOARD_BASIC_AUTH_PASSWORD: ci-only-password
+        run: docker compose -f compose.yml config --quiet

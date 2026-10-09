@@ -1,0 +1,11 @@
+{
+  "_doc": "Root-owned (/etc/relcore/sender.json). The named sender's identity and the footer every message carries, plus the send rules relsend enforces. Written by install/connect-sender.sh.",
+  "name": "Owner Name",
+  "title": "Owner",
+  "business": "Client Business",
+  "physical_address": "Street, City, State ZIP",
+  "windows": {"sms": {"start": "09:00", "end": "20:00"}, "email": {"start": "07:00", "end": "21:00"}},
+  "caps": {"per_day": 1, "per_week": 2},
+  "consent_required": {"sms": ["express", "existing_relationship_sms"], "email": ["existing_relationship", "express", "public_business_address"]},
+  "pacing_seconds": 3
+}

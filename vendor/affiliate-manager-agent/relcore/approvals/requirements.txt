@@ -1,0 +1,2 @@
+# relapprove venv only (Slack Socket Mode). Installed with pip --require-hashes by install/relcore-root.sh.
+slack_sdk==3.36.0 --hash=sha256:6c96887d7175fc1b0b2777b73bb65f39b5b8bee9bd8acfec071d64014f9e2d10

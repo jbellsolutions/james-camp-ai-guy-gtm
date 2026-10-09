@@ -1,0 +1,103 @@
+# Secret-free first-boot configuration. Keys stay in the private .env file.
+model:
+  default: accounts/fireworks/models/deepseek-v4-pro
+  provider: custom
+  base_url: https://api.fireworks.ai/inference/v1
+  key_env: FIREWORKS_API_KEY
+
+fallback_providers:
+  - provider: custom
+    model: deepseek-ai/DeepSeek-V4-Pro
+    base_url: https://api.together.xyz/v1
+    key_env: TOGETHER_API_KEY
+# __OPENROUTER_FALLBACK_START__
+  - provider: custom
+    model: deepseek/deepseek-v4-pro
+    base_url: https://openrouter.ai/api/v1
+    key_env: OPENROUTER_API_KEY
+# __OPENROUTER_FALLBACK_END__
+
+delegation:
+  model: accounts/fireworks/models/deepseek-v4-pro
+  provider: custom
+  base_url: https://api.fireworks.ai/inference/v1
+  key_env: FIREWORKS_API_KEY
+
+agent:
+  bot_mode_protocol: true
+  max_turns: 60
+  verify_on_stop: true
+
+approvals:
+  mode: manual
+  mcp_reload_confirm: true
+  destructive_slash_confirm: true
+
+privacy:
+  redact_pii: true
+
+security:
+  redact_secrets: true
+
+skills:
+  write_approval: true
+  guard_agent_created: true
+
+tool_loop_guardrails:
+  hard_stop_enabled: true
+
+gateway:
+  multiplex_profiles: true
+  multiplex_profile_allowlist: []
+  platforms:
+    slack:
+      enabled: __SLACK_ENABLED__
+    telegram:
+      enabled: __TELEGRAM_ENABLED__
+    a2a:
+      enabled: true
+      extra:
+        port: 9900
+        advertised_toolsets: [strategy, research, outbound, partnerships, revenue-operations]
+        agents: {}
+
+platform_toolsets:
+  cli: [file, web, browser, memory, skills, todo, kanban, a2a, clarify, vision]
+  slack: [file, web, browser, memory, skills, todo, kanban, a2a, clarify, vision]
+  telegram: [file, web, browser, memory, skills, todo, kanban, a2a, clarify, vision]
+  a2a: [session_search, memory, file, web, kanban]
+
+kanban:
+  dispatch_in_gateway: true
+  dispatch_interval_seconds: 30
+  auto_decompose: true
+  auto_decompose_per_tick: 1
+  orchestrator_profile: default
+  max_in_progress: 3
+  max_in_progress_per_profile: 1
+  auto_promote_children: true
+  failure_limit: 3
+
+mcp_servers:
+  agent-factory:
+    command: /opt/hermes/.venv/bin/python
+    args: [/opt/data/managed/services/agent_factory_mcp.py]
+    env:
+      AI_GUY_FACTORY_STATE_DIR: /opt/data/managed/state
+      AI_GUY_FACTORY_ASSETS_DIR: /opt/data/managed
+      HERMES_HOME: /opt/data
+    trust: trusted
+    enabled: true
+  composio:
+    url: '${COMPOSIO_MCP_URL}'
+    headers:
+      x-api-key: '${COMPOSIO_API_KEY}'
+    trust: untrusted
+    timeout: 90
+    enabled: false
+
+display:
+  personality: __AGENT_PERSONA__
+
+TELEGRAM_HOME_CHANNEL: '__TELEGRAM_HOME_CHANNEL__'
+SLACK_HOME_CHANNEL: '__SLACK_HOME_CHANNEL__'

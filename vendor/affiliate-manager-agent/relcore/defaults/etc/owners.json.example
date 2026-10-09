@@ -1,0 +1,6 @@
+{
+  "_doc": "Root-owned (/etc/relcore/owners.json, 0644 root). The only list of people who can approve, edit, reject or release. Written by install/connect-approvals.sh. trp can read it and never write it.",
+  "owners": [
+    {"name": "Owner Name", "slack_member_id": "U0XXXXXXX", "console_user": "owner"}
+  ]
+}

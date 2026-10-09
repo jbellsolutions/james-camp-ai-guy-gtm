@@ -1,0 +1,42 @@
+[
+  {
+    "repo": "https://github.com/jbellsolutions/go-to-market-orgo",
+    "commit": "73619f415584931d86a8f952b7e8edcba34a5b28",
+    "mode": "vendored"
+  },
+  {
+    "repo": "https://github.com/jbellsolutions/affiliate-manager-agent",
+    "commit": "8ae0740ac556b897ab41664f38b45e96ddc1d3e1",
+    "mode": "selected-assets"
+  },
+  {
+    "repo": "https://github.com/jbellsolutions/cold-email-master",
+    "commit": "e4257a889f38b049dd80b4bf5dddb30a99aa3572",
+    "mode": "optional-private-licensed-source"
+  },
+  {
+    "repo": "https://github.com/jbellsolutions/funding-affiliate-manager",
+    "commit": "9da77b635e40e1434daf5192839c526e64b6ba64",
+    "mode": "selected-assets"
+  },
+  {
+    "repo": "https://github.com/jbellsolutions/gohighlevel-agency-cli",
+    "commit": "78f45a813f7794188b430007fafd1de971b93624",
+    "mode": "selected-assets"
+  },
+  {
+    "repo": "https://github.com/jbellsolutions/data-box",
+    "commit": "7269625b5baaa5c75c2b24445a23e2ccd7ad0bfa",
+    "mode": "optional-fetch"
+  },
+  {
+    "repo": "https://github.com/jbellsolutions/browser-box",
+    "commit": "4c837a30cda707d1c8a4db0dc361f5063b1eb671",
+    "mode": "optional-fetch"
+  },
+  {
+    "repo": "https://github.com/jbellsolutions/orgo-ai-guy-bot",
+    "commit": "ca72030a04014e10db1a6ffa5a839a40e4765302",
+    "mode": "optional-fetch"
+  }
+]

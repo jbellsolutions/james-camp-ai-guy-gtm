@@ -1,0 +1,21 @@
+name: latitude-observer
+version: "1.0.0"
+description: "Opt-in Latitude traces for Hermes turns, model calls, tools, approvals, and delegated work; metadata-only or secret-redacted semantic capture."
+author: AI Guy
+requires_env:
+  - LATITUDE_API_KEY
+  - LATITUDE_PROJECT_SLUG
+hooks:
+  - pre_llm_call
+  - post_llm_call
+  - pre_api_request
+  - post_api_request
+  - api_request_error
+  - pre_tool_call
+  - post_tool_call
+  - pre_approval_request
+  - post_approval_response
+  - subagent_start
+  - subagent_stop
+  - on_session_end
+  - on_session_finalize

@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="420" viewBox="0 0 1200 420" role="img" aria-labelledby="title desc">
+  <title id="title">AI Guy Go-To-Market Partner</title>
+  <desc id="desc">A dark blue branded banner showing a connected revenue system.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#071426"/>
+      <stop offset="0.55" stop-color="#102f55"/>
+      <stop offset="1" stop-color="#075b65"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop stop-color="#4ee5c1"/>
+      <stop offset="1" stop-color="#79b8ff"/>
+    </linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="9"/></filter>
+  </defs>
+  <rect width="1200" height="420" rx="26" fill="url(#bg)"/>
+  <circle cx="1040" cy="90" r="135" fill="#4ee5c1" opacity=".08"/>
+  <circle cx="980" cy="350" r="185" fill="#79b8ff" opacity=".07"/>
+  <path d="M790 105 L930 175 L1080 105 M930 175 L1010 310 M930 175 L825 300" fill="none" stroke="#79b8ff" stroke-width="3" opacity=".5"/>
+  <g fill="#4ee5c1">
+    <circle cx="790" cy="105" r="13"/><circle cx="930" cy="175" r="18"/>
+    <circle cx="1080" cy="105" r="13"/><circle cx="1010" cy="310" r="13"/><circle cx="825" cy="300" r="13"/>
+  </g>
+  <rect x="75" y="70" width="168" height="35" rx="17.5" fill="#4ee5c1" opacity=".14"/>
+  <text x="95" y="94" font-family="Inter,Arial,sans-serif" font-size="16" font-weight="700" fill="#8ff5dc" letter-spacing="2">THE AI GUY</text>
+  <text x="75" y="176" font-family="Inter,Arial,sans-serif" font-size="54" font-weight="800" fill="#fff">Go-To-Market Partner</text>
+  <rect x="75" y="205" width="610" height="5" rx="2.5" fill="url(#accent)"/>
+  <text x="75" y="262" font-family="Inter,Arial,sans-serif" font-size="25" fill="#d4e6f7">Memory. Visibility. Delegation. Revenue.</text>
+  <text x="75" y="312" font-family="Inter,Arial,sans-serif" font-size="20" fill="#a9c5dc">Simple to launch. Safe to grow. Built to work.</text>
+</svg>

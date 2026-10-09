@@ -1,0 +1,272 @@
+{
+ "title": "Affiliate partner types",
+ "source": "True Revenue Partner partner map, family F1 (Affiliates)",
+ "families": [
+  {
+   "id": "F1",
+   "name": "Affiliates",
+   "worker": "Affiliate Program Manager",
+   "subcategories": [
+    {
+     "id": "F1.A",
+     "name": "Content & editorial publishers",
+     "types": [
+      {
+       "id": "F1.A.1",
+       "name": "Niche blogger / SEO affiliate site",
+       "what": "Topic site ranking for buyer-intent searches"
+      },
+      {
+       "id": "F1.A.2",
+       "name": "Review site",
+       "what": "Single-product or category reviews"
+      },
+      {
+       "id": "F1.A.3",
+       "name": "Comparison / \"best X\" / \"X vs Y\" site",
+       "what": "Listicles and head-to-head pages"
+      },
+      {
+       "id": "F1.A.4",
+       "name": "Mass-media commerce desk",
+       "what": "Newspaper or magazine shopping desk"
+      },
+      {
+       "id": "F1.A.5",
+       "name": "B2B software review / list directory",
+       "what": "Software directories and list sites"
+      },
+      {
+       "id": "F1.A.6",
+       "name": "Long-form creator-affiliate",
+       "what": "YouTube or podcast creator paid only on tracked commission"
+      },
+      {
+       "id": "F1.A.7",
+       "name": "Educator / course creator affiliate",
+       "what": "Teachers linking tools inside lessons"
+      }
+     ]
+    },
+    {
+     "id": "F1.B",
+     "name": "Deal & incentive publishers",
+     "types": [
+      {
+       "id": "F1.B.1",
+       "name": "Coupon / voucher code site",
+       "what": "Code aggregators"
+      },
+      {
+       "id": "F1.B.2",
+       "name": "Deal community / forum",
+       "what": "User-voted deal boards"
+      },
+      {
+       "id": "F1.B.3",
+       "name": "Cashback portal",
+       "what": "Shares commission back to shoppers"
+      },
+      {
+       "id": "F1.B.4",
+       "name": "Loyalty / points / miles program",
+       "what": "Airline, hotel or retail points malls"
+      },
+      {
+       "id": "F1.B.5",
+       "name": "Card-linked offer platform",
+       "what": "Offers triggered by bank-card spend"
+      },
+      {
+       "id": "F1.B.6",
+       "name": "Browser extension",
+       "what": "Auto-applies codes or cashback"
+      },
+      {
+       "id": "F1.B.7",
+       "name": "Virtual incentive / reward app",
+       "what": "In-game currency or survey rewards"
+      },
+      {
+       "id": "F1.B.8",
+       "name": "Affinity / closed user group",
+       "what": "Gated audiences such as students, military, employees"
+      }
+     ]
+    },
+    {
+     "id": "F1.C",
+     "name": "Performance & paid-traffic affiliates",
+     "types": [
+      {
+       "id": "F1.C.1",
+       "name": "Media buyer",
+       "what": "Buys paid social, native or display to drive offers"
+      },
+      {
+       "id": "F1.C.2",
+       "name": "PPC / search affiliate (incl. trademark-plus)",
+       "what": "Bids on search terms, branded only with permission"
+      },
+      {
+       "id": "F1.C.3",
+       "name": "Domain parking",
+       "what": "Monetizes parked domains"
+      },
+      {
+       "id": "F1.C.4",
+       "name": "Retargeting partner",
+       "what": "Re-engages site visitors"
+      },
+      {
+       "id": "F1.C.5",
+       "name": "Comparison shopping engine",
+       "what": "Price-comparison feeds"
+      },
+      {
+       "id": "F1.C.6",
+       "name": "Mobile / app-install & SMS partner",
+       "what": "App installs, SMS offers"
+      },
+      {
+       "id": "F1.C.7",
+       "name": "Pay-per-call publisher / call network",
+       "what": "Drives qualified inbound calls"
+      },
+      {
+       "id": "F1.C.8",
+       "name": "Lead-gen publisher (quiz funnels, co-reg)",
+       "what": "Collects and sells leads"
+      }
+     ]
+    },
+    {
+     "id": "F1.D",
+     "name": "Email & list owners",
+     "types": [
+      {
+       "id": "F1.D.1",
+       "name": "Owned-newsletter affiliate",
+       "what": "Newsletter linking offers on commission"
+      },
+      {
+       "id": "F1.D.2",
+       "name": "Rented / shared list mailer",
+       "what": "Mails third-party lists on performance"
+      },
+      {
+       "id": "F1.D.3",
+       "name": "Email lead-gen affiliate",
+       "what": "Captures leads via email"
+      },
+      {
+       "id": "F1.D.4",
+       "name": "Email retargeting partner",
+       "what": "Re-mails abandoners on the brand's behalf"
+      }
+     ]
+    },
+    {
+     "id": "F1.E",
+     "name": "Aggregators & sub-networks",
+     "types": [
+      {
+       "id": "F1.E.1",
+       "name": "Sub-affiliate network",
+       "what": "Houses hundreds or thousands of small publishers"
+      },
+      {
+       "id": "F1.E.2",
+       "name": "CPA network",
+       "what": "Performance network of media buyers"
+      },
+      {
+       "id": "F1.E.3",
+       "name": "Creator monetization layer",
+       "what": "Aggregates creators' links"
+      }
+     ]
+    },
+    {
+     "id": "F1.F",
+     "name": "Technology & commerce-enablement partners",
+     "types": [
+      {
+       "id": "F1.F.1",
+       "name": "Conversion-tech widget / plug-in",
+       "what": "On-site tools that drive conversions"
+      },
+      {
+       "id": "F1.F.2",
+       "name": "Checkout / cart-abandonment tool",
+       "what": "Recovers carts"
+      },
+      {
+       "id": "F1.F.3",
+       "name": "Shopping assistant / AI answer surface",
+       "what": "Assistants that recommend products"
+      },
+      {
+       "id": "F1.F.4",
+       "name": "Registry platform",
+       "what": "Wedding and baby registries"
+      }
+     ]
+    },
+    {
+     "id": "F1.G",
+     "name": "Community & micro-creator affiliates",
+     "types": [
+      {
+       "id": "F1.G.1",
+       "name": "Community owner affiliate",
+       "what": "Skool, Discord, Facebook group or Reddit owner linking offers"
+      },
+      {
+       "id": "F1.G.2",
+       "name": "Commission-only micro-creator",
+       "what": "Small social creator on commission, no fee"
+      }
+     ]
+    },
+    {
+     "id": "F1.H",
+     "name": "B2B & professional affiliates",
+     "types": [
+      {
+       "id": "F1.H.1",
+       "name": "B2B SaaS affiliate (consultant, blogger, educator)",
+       "what": "Professionals recommending software"
+      },
+      {
+       "id": "F1.H.2",
+       "name": "Agency-as-affiliate",
+       "what": "Agency that recommends but does not resell"
+      },
+      {
+       "id": "F1.H.3",
+       "name": "Freelancer / implementer affiliate",
+       "what": "Solo implementers linking tools"
+      }
+     ]
+    },
+    {
+     "id": "F1.I",
+     "name": "Customer & alumni affiliates",
+     "types": [
+      {
+       "id": "F1.I.1",
+       "name": "Customer affiliate",
+       "what": "Customer paid cash commission for promoting to an audience"
+      },
+      {
+       "id": "F1.I.2",
+       "name": "Graduate / alumni affiliate",
+       "what": "Course or certification graduate promoting via link"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

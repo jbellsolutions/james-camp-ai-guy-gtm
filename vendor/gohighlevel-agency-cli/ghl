@@ -1,0 +1,17 @@
+#!/bin/bash
+# GHL CLI wrapper — auto-activates venv and loads .env
+SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
+source "$SCRIPT_DIR/.venv/bin/activate"
+# Load .env if it exists, but never clobber a var already set in the calling
+# shell (e.g. `GHL_LOCATION_ID=x ./ghl ...`) — only fill in what's unset.
+if [ -f "$SCRIPT_DIR/.env" ]; then
+    while IFS='=' read -r key value; do
+        case "$key" in
+            ''|'#'*) continue ;;
+        esac
+        if [ -z "${!key+x}" ]; then
+            export "$key=$value"
+        fi
+    done < "$SCRIPT_DIR/.env"
+fi
+exec cli-anything-gohighlevel "$@"

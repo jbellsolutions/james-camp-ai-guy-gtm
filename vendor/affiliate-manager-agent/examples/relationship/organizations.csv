@@ -1,0 +1,8 @@
+crm_id,name,domain,kind,solo,city,state,niches,promo_channels,regions,audience,website
+o-northwind,Northwind Outdoor Gear,northwindgear.example.com,client,no,Denver,CO,,,,,
+o-trailnotes,Trail Notes,trailnotes.example.com,content creator,no,Boulder,CO,Hiking,blog,Colorado,day hikers buying their first pack,https://trailnotes.example.com
+o-packreview,Pack Review,packreview.example.com,content creator,no,Chicago,IL,Backpacking,blog;youtube,National,,https://packreview.example.com
+o-summit,Summit Letter,summitletter.example.com,content creator,no,Los Angeles,CA,Trail running,newsletter,National,trail runners,https://summitletter.example.com
+o-campdeals,Camp Deals,campdeals.example.com,deal site,no,Charlotte,NC,Camping,coupon,National,,https://campdeals.example.com
+o-ridgecrew,Ridge Crew,ridgecrew.example.com,community,no,Denver,CO,Climbing,community,Colorado,,https://ridgecrew.example.com
+o-owen,Owen Price,owenprice.example.com,customer,yes,Chicago,IL,Camping,,,,

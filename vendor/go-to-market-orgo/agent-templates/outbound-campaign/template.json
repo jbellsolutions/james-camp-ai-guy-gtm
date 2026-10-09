@@ -1,0 +1,8 @@
+{
+  "template_id": "outbound-campaign",
+  "default_profile_name": "outbound-campaign",
+  "display_name": "Outbound Campaign",
+  "description": "Designs segments, messages, tests, and reply workflows for responsible outbound.",
+  "capabilities": ["segmentation", "campaign-design", "reply-triage"],
+  "toolsets": ["file", "web", "memory", "skills", "todo", "kanban", "a2a", "clarify"]
+}

@@ -1,0 +1,7 @@
+partner_crm_id,type_id,contacts,tier,joined,conversions,last_conversion_at,link,code,platform_id,status
+o-trailnotes,F1.A.1,c-ava:editor,Silver,2025-02-10,4,2025-11-02,https://northwindgear.example.com/r/trailnotes,TRAIL,plat-trail,active
+o-packreview,F1.A.2,c-marco:founder,,2025-06-01,0,,https://northwindgear.example.com/r/pack,PACK,plat-pack,active
+o-summit,F1.D.1,c-jen:writer,,2025-08-15,0,,https://northwindgear.example.com/r/summit,SUMMIT,plat-summit,active
+o-campdeals,F1.B.1,c-luis:deals editor,Gold,2024-09-01,40,2026-09-25,https://northwindgear.example.com/r/camp,CAMP,plat-camp,active
+o-ridgecrew,F1.G.1,c-kim:community host,,2025-04-20,0,,https://northwindgear.example.com/r/ridge,RIDGE,plat-ridge,active
+o-owen,F1.I.1,c-owen:customer,,2026-01-05,1,2026-02-11,https://northwindgear.example.com/r/owen,OWEN,plat-owen,active

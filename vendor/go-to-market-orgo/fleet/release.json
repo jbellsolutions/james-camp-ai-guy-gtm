@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "stack_version": "2026.09.13.1",
+  "role": "go-to-market",
+  "repository": "https://github.com/jbellsolutions/go-to-market-orgo",
+  "hermes": {
+    "version": "0.21.2",
+    "tag": "v2026.9.11",
+    "commit": "939e45c91d751fadd94dcd1b873ac3cb44846213",
+    "image_digest": "sha256:9469b3e78b9545b6d576eb8887a95352e9a0ea83730eaf31431cf862ca1010e1"
+  },
+  "components": {
+    "honcho": "native-hermes-memory-provider",
+    "latitude": "metadata-first-observer",
+    "a2a": "authenticated-hermes-a2a-v1",
+    "agent_factory": "approval-gated-role-templates",
+    "agent_bundle": "disabled"
+  },
+  "preserve": [
+    ".env",
+    "config.yaml",
+    "state databases",
+    "conversations",
+    "Honcho state",
+    "vault",
+    "logs",
+    "customer-modified managed files"
+  ]
+}

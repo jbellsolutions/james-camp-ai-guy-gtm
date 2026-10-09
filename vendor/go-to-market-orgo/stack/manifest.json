@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "stack_version": "2026.09.13.1",
+  "role": "go-to-market",
+  "runtime": {
+    "name": "Hermes Agent",
+    "version": "0.21.2",
+    "tag": "v2026.9.11",
+    "commit": "939e45c91d751fadd94dcd1b873ac3cb44846213",
+    "image_digest": "sha256:9469b3e78b9545b6d576eb8887a95352e9a0ea83730eaf31431cf862ca1010e1"
+  },
+  "components": {
+    "honcho": {
+      "integration": "native-hermes-memory-provider",
+      "default": "ready-unconnected",
+      "scope": "one-workspace-distinct-ai-peers",
+      "documentation": "https://hermes-agent.nousresearch.com/docs/user-guide/features/honcho"
+    },
+    "latitude": {
+      "integration": "observer-plugin",
+      "version": "1.0.0",
+      "default_capture_mode": "metadata",
+      "raw_capture_available": false,
+      "documentation": "https://docs.latitude.so/telemetry/otel-exporter"
+    },
+    "a2a": {
+      "protocol": "A2A v1.0",
+      "inbound_default": "localhost",
+      "authority_rule": "request-never-approval",
+      "documentation": "https://hermes-agent.nousresearch.com/docs/user-guide/messaging/a2a"
+    },
+    "agent_factory": {
+      "persistent_creation_requires_owner_approval": true,
+      "max_active_named_profiles": 8
+    },
+    "business_tools": {
+      "integration": "optional-composio-session-mcp",
+      "default": "disabled",
+      "scope": "parent-profile-only",
+      "documentation": "https://docs.composio.dev/docs/sessions-via-mcp"
+    },
+    "agent_bundle": {
+      "enabled": false,
+      "reason": "Co-Founder-owned test-first capability"
+    }
+  }
+}

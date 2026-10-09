@@ -1,0 +1,106 @@
+name: ${AGENT_NAME:-ai-guy-go-to-market}
+
+# Current, reproducible Hermes runtime. The readable tag identifies the release;
+# the digest keeps every install on the exact reviewed multi-architecture image.
+x-hermes-image: &hermes-image nousresearch/hermes-agent:v2026.9.11@sha256:9469b3e78b9545b6d576eb8887a95352e9a0ea83730eaf31431cf862ca1010e1
+
+services:
+  hermes:
+    image: *hermes-image
+    container_name: ${AGENT_NAME:-ai-guy-go-to-market}
+    restart: unless-stopped
+    stdin_open: true
+    tty: true
+    environment:
+      TZ: ${TZ:-America/New_York}
+      HERMES_UID: ${HERMES_UID:-1000}
+      HERMES_GID: ${HERMES_GID:-1000}
+      HERMES_DASHBOARD: "true"
+      HERMES_DASHBOARD_HOST: 0.0.0.0
+      HERMES_DASHBOARD_PORT: 9119
+      HERMES_DASHBOARD_BASIC_AUTH_USERNAME: ${HERMES_DASHBOARD_BASIC_AUTH_USERNAME:-operator}
+      HERMES_DASHBOARD_BASIC_AUTH_PASSWORD: ${HERMES_DASHBOARD_BASIC_AUTH_PASSWORD:?dashboard password missing; run ./new-agent.sh}
+      FIREWORKS_API_KEY: ${FIREWORKS_API_KEY:?FIREWORKS_API_KEY is required}
+      TOGETHER_API_KEY: ${TOGETHER_API_KEY:-}
+      OPENROUTER_API_KEY: ${OPENROUTER_API_KEY:-}
+      SLACK_BOT_TOKEN: ${SLACK_BOT_TOKEN:-}
+      SLACK_APP_TOKEN: ${SLACK_APP_TOKEN:-}
+      TELEGRAM_BOT_TOKEN: ${TELEGRAM_BOT_TOKEN:-}
+      GATEWAY_ALLOW_ALL_USERS: ${GATEWAY_ALLOW_ALL_USERS:-false}
+      HONCHO_API_KEY: ${HONCHO_API_KEY:-}
+      HONCHO_BASE_URL: ${HONCHO_BASE_URL:-}
+      LATITUDE_API_KEY: ${LATITUDE_API_KEY:-}
+      LATITUDE_PROJECT_SLUG: ${LATITUDE_PROJECT_SLUG:-}
+      LATITUDE_CAPTURE_MODE: ${LATITUDE_CAPTURE_MODE:-metadata}
+      LATITUDE_OTLP_ENDPOINT: ${LATITUDE_OTLP_ENDPOINT:-https://ingest.latitude.so/v1/traces}
+      AI_GUY_STACK_VERSION: 2026.09.13.1
+      AI_GUY_AGENT_ROLE: go-to-market
+      A2A_PEER_TOKENS: ${A2A_PEER_TOKENS:-}
+      A2A_TRUSTED_PEERS: ${A2A_TRUSTED_PEERS:-}
+      A2A_BEARER_TOKEN: ${A2A_BEARER_TOKEN:-}
+      A2A_HOST: ${A2A_HOST:-127.0.0.1}
+      A2A_PORT: 9900
+      A2A_AGENT_NAME: ${A2A_AGENT_NAME:-ai-guy-go-to-market}
+      A2A_PUBLIC_URL: ${A2A_PUBLIC_URL:-}
+      A2A_ALLOW_ALL_USERS: "false"
+      A2A_RATE_LIMIT: ${A2A_RATE_LIMIT:-60}
+      A2A_MAX_PINGPONG_TURNS: ${A2A_MAX_PINGPONG_TURNS:-3}
+      A2A_REPLY_TIMEOUT: ${A2A_REPLY_TIMEOUT:-300}
+      INSTANTLY_API_KEY: ${INSTANTLY_API_KEY:-}
+      DEEPSEEK_API_KEY: ${DEEPSEEK_API_KEY:-}
+      BUSINESS_NAME: ${BUSINESS_NAME:-}
+      BOOKING_URL: ${BOOKING_URL:-}
+      COMPOSIO_API_KEY: ${COMPOSIO_API_KEY:-}
+      COMPOSIO_MCP_URL: ${COMPOSIO_MCP_URL:-}
+      # Retained only so existing installations can migrate without downtime.
+      COMPOSIO_USER_ID: ${COMPOSIO_USER_ID:-}
+      COMPOSIO_MCP_SERVER_ID: ${COMPOSIO_MCP_SERVER_ID:-}
+    volumes:
+      - ${BASE_DIR}/hermes/data:/opt/data
+      - ${BASE_DIR}/vault:/vault
+      - ${BASE_DIR}/logs:/logs
+    ports:
+      - "127.0.0.1:${HERMES_PORT:-18789}:9119"
+      - "${A2A_BIND_ADDRESS:-127.0.0.1}:${A2A_PUBLIC_PORT:-9900}:9900"
+    networks: [agent_net]
+    mem_limit: ${HERMES_MEM_LIMIT:-3g}
+    cpus: "${HERMES_CPUS:-2.0}"
+    security_opt: ["no-new-privileges:true"]
+    command: ["gateway", "run"]
+    healthcheck:
+      test: ["CMD-SHELL", "hermes gateway status >/dev/null 2>&1 || exit 1"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+      start_period: 90s
+
+  sync:
+    build: ./sync
+    container_name: ${AGENT_NAME:-ai-guy-go-to-market}-sync
+    profiles: ["sync"]
+    restart: unless-stopped
+    init: true
+    depends_on:
+      hermes:
+        condition: service_started
+    environment:
+      TZ: ${TZ:-America/New_York}
+      NOTION_TOKEN: ${NOTION_TOKEN:-}
+      NOTION_DB_SESSIONS: ${NOTION_DB_SESSIONS:-}
+      NOTION_DB_KANBAN_TASKS: ${NOTION_DB_KANBAN_TASKS:-}
+      NOTION_DB_MEMORIES: ${NOTION_DB_MEMORIES:-}
+      NOTION_DB_SKILLS: ${NOTION_DB_SKILLS:-}
+      NOTION_DB_EVENTS: ${NOTION_DB_EVENTS:-}
+      SYNC_INTERVAL_SECONDS: ${SYNC_INTERVAL_SECONDS:-60}
+    volumes:
+      - ${BASE_DIR}/hermes/data:/opt/data:ro
+      - ${BASE_DIR}/vault:/vault
+    networks: [agent_net]
+    mem_limit: 256m
+    cpus: "0.5"
+    security_opt: ["no-new-privileges:true"]
+
+networks:
+  agent_net:
+    driver: bridge
+    name: ${AGENT_NAME:-ai-guy-go-to-market}-net

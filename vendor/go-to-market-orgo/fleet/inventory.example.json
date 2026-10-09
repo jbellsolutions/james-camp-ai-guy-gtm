@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "targets": [
+    {
+      "id": "customer-go-to-market",
+      "role": "go-to-market",
+      "host": "private-hostname-or-tailscale-ip",
+      "user": "agent",
+      "enabled": false,
+      "deployment_descriptor": "~/.config/ai-guy-agent/go-to-market.json"
+    }
+  ]
+}

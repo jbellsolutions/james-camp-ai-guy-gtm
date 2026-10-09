@@ -1,6 +1,6 @@
 # Living contact cards and context graph
 
-Bundled relcore is the existing Affiliate Manager relationship engine, not a new invented memory store. Run it with Python standard library through `scripts/relationship.sh`. Its default mode is plugin/drafts-only. State and vault stay outside Git. `RELCORE_HOME`, `RELCORE_VAULT`, `RELCORE_MODE=plugin` and `RELCORE_STOP_FILE` are explicit client paths.
+Bundled relcore is the existing Revenue Partnerships Program Manager relationship engine, not a new invented memory store. Run it with Python standard library through `scripts/relationship.sh`. Its default mode is plugin/drafts-only. State and vault stay outside Git. `RELCORE_HOME`, `RELCORE_VAULT`, `RELCORE_MODE=plugin` and `RELCORE_STOP_FILE` are explicit client paths.
 
 Use `init`, `import plan csv`, `import apply csv`, `card`, `context`, `scorecard` and `purge` following `python3 -m relcore --help`. Synthetic examples are in the source affiliate package. Configure taxonomy for James; the included affiliate partner map is optional for ordinary prospects. Do not turn every prospect into an affiliate or enroll them in an affiliate lifecycle.
 

@@ -11,3 +11,5 @@ The original cold email archive contains paid-course-derived material and is exc
 Smartlead was mentioned in source materials but a standalone prebuilt Smartlead skill was not found in the inspected source folders/repos. The package includes a new official-documentation-driven operations skill, labeled accordingly. PlusVibe is discovery-on-request, not a verified installed MCP.
 
 Chief Sales Officer: selected MIT-licensed ledger, routines, policies and ledger tests from chief-sales-officer-orgo at the locked commit. The client identity and operating skill override its Content Studio/Attio/ClickUp installation assumptions. Its original host installer is intentionally not part of this deployment.
+
+The narrated relationship-layer video was supplied by the project owner at `single-brain/agents/affiliate-manager/video/relationship-layer-narrated.mp4` for inclusion in this public handoff. It demonstrates fictional sample contacts. Companion repository links do not publish private repo contents or grant access.

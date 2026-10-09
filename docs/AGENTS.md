@@ -15,6 +15,8 @@ Chief Sales Officer oversees campaign execution, customer conversion and optiona
 - [Agent 4 · GoHighLevel Bridge](../profiles/crm-agent-4/CHARTER.md) — `crm-agent-4` (conversations).
 - [Conversion Specialist](../profiles/conversion-specialist/CHARTER.md) — `conversion-specialist` (conversations).
 - [Conversion & Follow-through](../profiles/conversion-manager/CHARTER.md) — `conversion-manager` (conversations).
-- [Optional Affiliate Manager](../profiles/affiliate-manager/CHARTER.md) — `affiliate-manager` (affiliate).
+- [Optional Revenue Partnerships Program Manager](../profiles/affiliate-manager/CHARTER.md) — `affiliate-manager` (affiliate).
 
 Profile count is separate from screen count. Four screen leases is the maximum inherited workspace convention; run API/research/writing tasks headlessly. Queue computer work. Ask before purchasing more capacity.
+
+The optional role is named **Revenue Partnerships Program Manager**. Its stable profile ID, source skill IDs and installer flag (`affiliate-manager`, `--affiliate`) remain unchanged to preserve prepared deployments. This is separate from the customer Conversion Specialist. See the [companion repository sections](../README.md#explore-the-connected-repositories).

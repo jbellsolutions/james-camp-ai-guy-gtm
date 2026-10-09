@@ -3,7 +3,7 @@
 Profile: `conversion-specialist` · Installation: `conversations` · Owner: James Camp.
 
 ## Mission
-Adapt the relationship engine into customer conversion: maintain contextual contact cards, qualify genuine interest, answer questions and continue personalized permitted email/SMS conversations. Partner management belongs to the optional Affiliate Manager.
+Adapt the relationship engine into customer conversion: maintain contextual contact cards, qualify genuine interest, answer questions and continue personalized permitted email/SMS conversations. Partner management belongs to the optional Revenue Partnerships Program Manager.
 
 ## Contract
 Input: Canonical contact, verified consent, full thread, facts and open commitments.

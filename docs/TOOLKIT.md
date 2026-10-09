@@ -19,7 +19,7 @@ The source and operating instructions below ship with this repository. Accounts,
 | Data Box / BrowserBox | [Sourcing skill](../skills/lead-sourcing), skills and [locked fetcher](../scripts/fetch-optional.py) | Optional source fetch, inspect dependencies, selected provider keys and bounded probe |
 | PlusVibe / Consulti | Discovery guidance and [service directory](SERVICES.md) | Inspect current official API/access and build/test a skill if chosen; no preconnected MCP claimed |
 | Skill creator / Claude Code | [Skill creator](../skills/skill-creator), plugin manifests, [handoff](../HANDOFF.md) | Claude Code access on setup machine; reviewed tool schemas and tests for new capabilities |
-| Affiliate Manager | [Optional charter](../profiles/affiliate-manager/CHARTER.md), skills and relationship engine | `--affiliate`, partner program/terms, attribution source and approved partner playbook |
+| Revenue Partnerships Program Manager | [Optional charter](../profiles/affiliate-manager/CHARTER.md), skills and relationship engine | `--affiliate`, partner program/terms, attribution source and approved partner playbook |
 
 ## GoHighLevel CLI and MCP
 

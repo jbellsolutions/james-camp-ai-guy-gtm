@@ -4,7 +4,7 @@ Use this as the client launch record. The setup agent handles technical work; Ja
 
 ## 1. Bring to setup
 
-- [ ] Choose **Cold Email**, **Conversations & Conversion**, or **both**; decide on Affiliate Manager at the end.
+- [ ] Choose **Cold Email**, **Conversations & Conversion**, or **both**; decide on Revenue Partnerships Program Manager at the end.
 - [ ] Choose an existing Orgo computer or a Linux VPS; provide authorized access and approve any new hosting spend.
 - [ ] Provide the offer, ideal customer, exclusions, truthful proof, approved/prohibited claims, voice, and sender identity.
 - [ ] Identify the decision maker, approval scope, response expectations, escalation route, and monthly operating budget.
@@ -62,7 +62,7 @@ A provider-specific webhook/polling adapter is configured against the chosen acc
 - [ ] **Data subscriptions:** select only providers that fit the audience; verify current API availability, account access, quota, budget, provenance, and result quality.
 - [ ] **Composio:** connect only selected toolkits/accounts, inspect schemas, and run a read probe before writes.
 - [ ] **PlusVibe / Consulti / additional providers:** inspect current docs and available adapters before promising an integration; create/review a skill if needed.
-- [ ] **Affiliate Manager:** approve program terms, partner taxonomy, attribution source, and responsibilities; reuse the existing graph and communication ownership.
+- [ ] **Revenue Partnerships Program Manager:** approve program terms, partner taxonomy, attribution source, and responsibilities; reuse the existing graph and communication ownership.
 
 ## 6. Activate CSO oversight
 

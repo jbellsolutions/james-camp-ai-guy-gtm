@@ -1,9 +1,9 @@
-# Optional Affiliate Manager
+# Optional Revenue Partnerships Program Manager
 
-Profile: `affiliate-manager` · Installation: `affiliate` · Owner: James Camp.
+Stable profile: `affiliate-manager` · Installation: `conversations` (optional `--affiliate`) · Owner: James Camp.
 
 ## Mission
-Extend relationship management into an affiliate program.
+Build and manage James’s revenue relationships program: partner discovery, recruiting, onboarding, activation, introductions, contextual follow-up and evidence-based attribution. Affiliate relationships are one supported program type.
 
 ## Contract
 Input: Owner decision to enable, approved terms, partner types, CRM and existing graph.

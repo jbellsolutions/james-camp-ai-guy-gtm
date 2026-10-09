@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="440" viewBox="0 0 1280 440" role="img" aria-labelledby="title desc">
+<title id="title">Watch Revenue Partnerships Program Manager</title>
+<desc id="desc">A narrated walkthrough of contextual contact cards, connected relationships and personalized partner conversations.</desc>
+<defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#101f2a"/><stop offset="1" stop-color="#07121b"/></linearGradient></defs>
+<rect width="1280" height="440" rx="24" fill="url(#bg)"/>
+<g font-family="Arial, Helvetica, sans-serif">
+<text x="54" y="63" fill="#6ce6c6" font-size="16" font-weight="700" letter-spacing="3">THE RELATIONSHIP LAYER · NARRATED WALKTHROUGH</text>
+<text x="54" y="142" fill="#f5f8fa" font-size="51" font-weight="700">Revenue Partnerships</text>
+<text x="54" y="202" fill="#f5f8fa" font-size="51" font-weight="700">Program Manager</text>
+<text x="54" y="256" fill="#a9c0c9" font-size="21">Remember the person. Connect the context.</text>
+<text x="54" y="287" fill="#a9c0c9" font-size="21">Make the next conversation personal.</text>
+<rect x="54" y="330" width="324" height="58" rx="29" fill="#6ce6c6"/>
+<path d="M81 347 L81 371 L102 359 Z" fill="#09202a"/>
+<text x="122" y="366" fill="#09202a" font-size="18" font-weight="700">WATCH THE FILM · 2:38</text>
+<path d="M906 164 L1005 264 M1045 156 L953 265" stroke="#34606b" stroke-width="3"/>
+<rect x="835" y="104" width="235" height="75" rx="14" fill="#15363d" stroke="#357265"/>
+<text x="858" y="134" fill="#6ce6c6" font-size="13" letter-spacing="2">PERSON</text><text x="858" y="160" fill="#f5f8fa" font-size="19">Context + preferences</text>
+<rect x="959" y="236" width="263" height="75" rx="14" fill="#22323c" stroke="#546772"/>
+<text x="982" y="266" fill="#bbd4db" font-size="13" letter-spacing="2">PARTNERSHIP</text><text x="982" y="292" fill="#f5f8fa" font-size="19">Commitments + next step</text>
+<circle cx="874" cy="322" r="28" fill="#d9bd81"/><path d="M866 309 L866 335 L888 322 Z" fill="#16252d"/>
+</g></svg>

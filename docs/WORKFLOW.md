@@ -24,7 +24,7 @@ flowchart TD
   Q -->|Yes| S[Contextual SMS under active playbook]
   S --> T[Conversion Manager: qualified next step]
   R --> T
-  P --> U[Optional Affiliate Manager: partner activation]
+  P --> U[Optional Revenue Partnerships Program Manager: partner activation]
   T --> V[Confirmed booking/outcome and learning]
 ```
 

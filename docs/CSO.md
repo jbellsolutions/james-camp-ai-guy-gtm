@@ -1,6 +1,6 @@
 # Chief Sales Officer: workforce oversight
 
-The CSO is included in the Cold Email installation and is its default owner-facing identity. Campaign Director still owns campaign execution. The Conversations installation opens as Conversion Specialist. Affiliate Manager is optional. [Meet every role](AGENTS.md).
+The CSO is included in the Cold Email installation and is its default owner-facing identity. Campaign Director still owns campaign execution. The Conversations installation opens as Conversion Specialist. Revenue Partnerships Program Manager is optional. [Meet every role](AGENTS.md).
 
 The CSO reviews the whole business path: approved campaigns → replies → qualified conversations → booked and attended meetings → confirmed outcomes. It assigns a named executor, next action, due date and receipt requirement. It never becomes a second sender, CRM writer or consent authority.
 
@@ -17,7 +17,7 @@ docker compose --env-file .env exec -T hermes python3 \
   --db /opt/data/cso/pipeline.db review
 ```
 
-The local ledger is a recovery and review journal. GoHighLevel remains the CRM system of record. Read the source CLI `--help` before importing normalized events. Source IDs, timestamps, verified identity and stage evidence are required. The unchanged upstream ledger uses seven fixed source labels: use `ai-go-to-market` for campaign/conversion receipts and legacy `revenue-partner` for optional Affiliate Manager receipts. The private integration contract records that mapping; no separate Revenue Partner deployment is assumed. Keep all business state out of Git.
+The local ledger is a recovery and review journal. GoHighLevel remains the CRM system of record. Read the source CLI `--help` before importing normalized events. Source IDs, timestamps, verified identity and stage evidence are required. The unchanged upstream ledger uses seven fixed source labels: use `ai-go-to-market` for campaign/conversion receipts and legacy `revenue-partner` for optional Revenue Partnerships Program Manager receipts. The private integration contract records that mapping; no separate Revenue Partner deployment is assumed. Keep all business state out of Git.
 
 ## Activate the operating loop
 

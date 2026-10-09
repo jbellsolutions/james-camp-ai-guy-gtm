@@ -8,7 +8,7 @@
 
 **Find the right leads. Send thoughtful outreach. Keep every reply connected to the relationship.**
 
-[**Start your installation →**](START-HERE.md) · [What you need](docs/READY-TO-RUN.md) · [Explore the toolkit](docs/TOOLKIT.md) · [Meet the team](docs/AGENTS.md)
+[**See the proof ↗**](https://truerevenuepartnerships.com/proof/) · [**Start your installation →**](START-HERE.md) · [What you need](docs/READY-TO-RUN.md) · [Explore the toolkit](docs/TOOLKIT.md) · [Meet the team](docs/AGENTS.md)
 
 [![Package checks](https://github.com/jbellsolutions/james-camp-ai-guy-gtm/actions/workflows/check.yml/badge.svg?branch=main)](https://github.com/jbellsolutions/james-camp-ai-guy-gtm/actions/workflows/check.yml)
 [![Deployment](https://img.shields.io/badge/Deployment-Orgo_%7C_VPS-0f766e)](docs/DEPLOYMENT.md)
@@ -18,6 +18,16 @@
 </div>
 
 ---
+
+## Watch the relationship layer
+
+**Revenue Partnerships Program Manager** keeps the people, conversations, introductions and commitments connected. This narrated walkthrough shows the context cards and relationship graph behind the partner workflow.
+
+[![Watch the Revenue Partnerships Program Manager relationship-layer walkthrough](assets/relationship-video-poster.svg)](https://github.com/jbellsolutions/james-camp-ai-guy-gtm/raw/refs/heads/main/assets/video/relationship-layer-narrated.mp4)
+
+**[▶ Watch the narrated walkthrough · 2 min 38 sec](https://github.com/jbellsolutions/james-camp-ai-guy-gtm/raw/refs/heads/main/assets/video/relationship-layer-narrated.mp4)** · [Open the video file](assets/video/relationship-layer-narrated.mp4)
+
+The video demonstrates the source relationship system with sample contacts. James’s customer conversations belong to Conversion Specialist; partner relationships belong to the optional Revenue Partnerships Program Manager. His live connections and approved playbooks are verified during setup.
 
 ## Your outbound, connected from beginning to end
 
@@ -46,7 +56,7 @@ Install Cold Email, Conversations & Conversion, or both. Reuse my accounts,
 keep credentials private, and verify every selected connection before launch.
 ```
 
-The setup agent asks about your host, offer, data, sequencer, CRM, and Slack. A Chief Sales Officer oversees the workforce. It also offers optional sourcing connections, Composio, and Affiliate Manager. You make the business choices and complete private sign-ins; the agent handles the installation and checks. [Full handoff prompt →](HANDOFF.md)
+The setup agent asks about your host, offer, data, sequencer, CRM, and Slack. A Chief Sales Officer oversees the workforce. It also offers optional sourcing connections, Composio, and Revenue Partnerships Program Manager. You make the business choices and complete private sign-ins; the agent handles the installation and checks. [Full handoff prompt →](HANDOFF.md)
 
 ## Two installations. One workflow.
 
@@ -54,9 +64,9 @@ The setup agent asks about your host, offer, data, sequencer, CRM, and Slack. A 
 |---|---|---|
 | **Cold Email + CSO** | 9 Hermes profiles | Chief Sales Officer, Campaign Director, Data & Research, List & Verification, Custom Email Writer, Independent Editorial, ESP & Deliverability, Sequencer Operator, Email Reply Agent |
 | **Conversations & Conversion** | 3 Hermes profiles | Agent 4 GoHighLevel Bridge, Conversion Specialist, Conversion & Follow-through |
-| **Optional Affiliate Manager** | +1 profile in Conversations | Partner recruiting, onboarding, activation, relationship management, and attribution review |
+| **Optional Revenue Partnerships Program Manager** | +1 profile in Conversations | Partner recruiting, onboarding, activation, relationship management, and attribution review |
 
-Install either system independently or both together. Conversion Specialist adapts the relationship engine for customer qualification, personalized replies and consented SMS. Affiliate Manager uses the same engine for partners when enabled. The CSO oversees priorities, assignments and evidence across both installations. [Read the charters →](docs/AGENTS.md)
+Install either system independently or both together. Conversion Specialist adapts the relationship engine for customer qualification, personalized replies and consented SMS. Revenue Partnerships Program Manager uses the same engine for partners when enabled. The CSO oversees priorities, assignments and evidence across both installations. [Read the charters →](docs/AGENTS.md)
 
 ```mermaid
 flowchart LR
@@ -100,9 +110,47 @@ Git, GitHub CLI, Python, Docker/Compose, and the tool dependencies are handled d
 | **Hermes deployment** | Pinned runtime, two-install preparation/deployment, profile identities/charters, launchers, health checks, and emergency stop. |
 | **Slack** | Two app manifests and a validation/creation helper; workspace installation includes owner consent. |
 | **Claude Code + skill authoring** | Plugin/marketplace manifests, installation handoff, and the skill-creator package. |
-| **Optional connections** | Data Box and BrowserBox skills/pinned source fetcher; Composio guidance; PlusVibe discovery; Affiliate Manager. |
+| **Optional connections** | Data Box and BrowserBox skills/pinned source fetcher; Composio guidance; PlusVibe discovery; Revenue Partnerships Program Manager. |
 
 **Bundled** means code or instructions are in this repository. **Connected** means your account has passed its live test. The [toolkit inventory](docs/TOOLKIT.md) shows the exact files, external dependencies, and remaining connection steps.
+
+## Explore the connected repositories
+
+This handoff packages the core workforce. These companion projects offer additional capabilities; their own setup, access and acceptance requirements apply.
+
+### AI Guy Go-to-Market · your revenue partner
+
+The [Go-to-Market for Orgo repository](https://github.com/jbellsolutions/go-to-market-orgo) is the broader revenue partner: offer and audience research, campaigns, partnerships, proposals and growth coordination. This James Camp edition packages its cold-email-to-conversion workflow with specialist ownership and CSO oversight.
+
+**[Explore the revenue partner repo →](https://github.com/jbellsolutions/go-to-market-orgo)** · [Install this client edition](START-HERE.md)
+
+*Companion repository access required. Selected core source is already bundled here.*
+
+### Revenue Partnerships Program Manager · relationships that compound
+
+Build a partner program around contextual relationships: discover and qualify partners, prepare onboarding, track introductions and open commitments, personalize communication, and review activation and attribution. The name reflects the full relationship role; affiliate programs are one use case.
+
+The packaged optional profile uses the [Affiliate Manager source repository](https://github.com/jbellsolutions/affiliate-manager-agent). [True Revenue Partner](https://github.com/jbellsolutions/true-revenue-partner) is the expanded relationship program builder, with living cards and partner-program playbooks.
+
+**[Explore the relationship engine →](https://github.com/jbellsolutions/affiliate-manager-agent)** · [Explore True Revenue Partner →](https://github.com/jbellsolutions/true-revenue-partner) · [Read the client charter](profiles/affiliate-manager/CHARTER.md)
+
+*Affiliate Manager source is public; True Revenue Partner requires repository access. Enable the packaged role with `--affiliate`; the stable profile ID remains `affiliate-manager`.*
+
+### Lead Radar · find expressed intent
+
+[Lead Radar](https://github.com/jbellsolutions/lead-radar) turns an offer query into ranked people and posts expressing relevant demand, with evidence and drafted openers. Use it as an optional upstream research source, then apply this system’s identity, eligibility, verification and consent gates. It does not automatically contact leads.
+
+**[Explore Lead Radar →](https://github.com/jbellsolutions/lead-radar)** · [Read its portable skill](https://github.com/jbellsolutions/lead-radar/blob/main/skills/lead-radar/SKILL.md)
+
+*Repository access and its own configured services are required. It is linked here, not installed or connected by this package. Review its current evaluation gates before adopting results.*
+
+### Chief Sales Officer · keep the workforce accountable
+
+The [Chief Sales Officer repository](https://github.com/jbellsolutions/chief-sales-officer-orgo) provides the oversight pattern: evidenced stages, named owners, due actions, daily reviews and receipt-backed outcomes. The James-specific CSO profile and selected ledger/routines are already packaged here.
+
+**[Explore the CSO repo →](https://github.com/jbellsolutions/chief-sales-officer-orgo)** · [Activate James’s CSO](docs/CSO.md)
+
+*Companion repository access required. This package uses its own client deployment, not the source’s existing-computer installer.*
 
 ## Choose your services
 

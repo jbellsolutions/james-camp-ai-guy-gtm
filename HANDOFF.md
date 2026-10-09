@@ -10,7 +10,7 @@ Data Box/API keys and BrowserBox. Ask which sequencer I use: Instantly or
 Smartlead, with PlusVibe optional. Ask whether to connect GoHighLevel, Slack,
 and optionally Composio. Use Conversion Specialist for customer replies and consented SMS, with CSO
 oversight of the whole workforce. At the end ask whether to add the separate
-Affiliate Manager for partner relationships. Configure and test CSO source
+Revenue Partnerships Program Manager for partner relationships. Configure and test CSO source
 coverage, assignments and daily/weekly reviews. Keep System One Workers as
 a separately scoped follow-on after this standard deployment passes acceptance.
 Reuse existing accounts and authorized budgets. Keep credentials in private

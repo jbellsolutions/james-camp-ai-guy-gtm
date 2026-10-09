@@ -11,5 +11,5 @@ The archived source material was built for Justin and existing installations; th
 - Source Instantly skills include scripts and example endpoint behavior. Resolve source helpers and recheck current official schema; source availability is not proof of current account capability.
 - No automatic delegation or model requirement overrides runtime availability or James’s budget. Separate profile passes preserve ownership and independent Editorial. Persistent profiles ship now; new profiles require owner authorization.
 
-- Conversion Specialist adapts affiliate relationship skills for customer qualification and contextual communication. It does not recruit partners or manage commissions. Affiliate Manager handles those optional partner responsibilities.
+- Conversion Specialist adapts affiliate relationship skills for customer qualification and contextual communication. It does not recruit partners or manage commissions. Revenue Partnerships Program Manager handles those optional partner responsibilities.
 - CSO selected source retains historical ownership examples. James-specific CSO identity/charter and config take precedence: Agent 4 owns GHL; no Attio/ClickUp connection or Content Studio replacement is assumed.

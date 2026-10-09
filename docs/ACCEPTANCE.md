@@ -21,4 +21,4 @@ Mark each selected integration LIVE only after its gate passes. Mark unselected 
 
 ## CSO workforce acceptance
 
-Confirm CSO and Conversion Specialist default identities, designated assignments and source mappings. Verify source coverage, due-work review and a receipt-backed result; verify daily/weekly scheduling on the target if selected. Affiliate Manager is optional and remains separate from customer conversion. Local CSO journal and CRM synchronization need an explicitly verified mapping.
+Confirm CSO and Conversion Specialist default identities, designated assignments and source mappings. Verify source coverage, due-work review and a receipt-backed result; verify daily/weekly scheduling on the target if selected. Revenue Partnerships Program Manager is optional and remains separate from customer conversion. Local CSO journal and CRM synchronization need an explicitly verified mapping.

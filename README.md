@@ -6,7 +6,9 @@
 
 ### James Camp’s go-to-market workforce.
 
-**Find the right leads. Send thoughtful outreach. Keep every reply connected to the relationship.**
+**A complete cold-email workflow: the right data, relevant emails, reliable reply handling.**
+
+*Bonus: contextual CRM follow-through and consented text messaging.*
 
 [**See the proof ↗**](https://truerevenuepartnerships.com/proof/) · [**Start your installation →**](START-HERE.md) · [What you need](docs/READY-TO-RUN.md) · [Explore the toolkit](docs/TOOLKIT.md) · [Meet the team](docs/AGENTS.md)
 
@@ -19,30 +21,17 @@
 
 ---
 
-## Watch the relationship layer
+## The cold-email workforce
 
-**Revenue Partnerships Program Manager** keeps the people, conversations, introductions and commitments connected. This narrated walkthrough shows the context cards and relationship graph behind the partner workflow.
+**The core deliverable is cold email, from data to replies.** Source or upload the audience, verify the list, write relevant emails, review the exact campaign, stage it in Instantly or Smartlead, and handle the replies with clear ownership. The CSO oversees readiness, handoffs and evidence throughout.
 
-[![Watch the Revenue Partnerships Program Manager relationship-layer walkthrough](assets/relationship-video-poster.svg)](https://jbellsolutions.github.io/james-camp-ai-guy-gtm/)
+![The cold-email workforce: source, verify, write, review, launch, handle replies and convert, with optional SMS](assets/cold-email-workforce.svg)
 
-**[▶ Watch the narrated walkthrough · 2 min 38 sec](https://jbellsolutions.github.io/james-camp-ai-guy-gtm/)** · [Open the video file](assets/video/relationship-layer-narrated.mp4)
+When someone replies, the Reply Agent stops the sequence, classifies intent, honors opt-outs and preserves the thread. Agent 4 carries the acknowledged handoff into GoHighLevel; Conversion Specialist uses that context to help the lead reach a qualified next step.
 
-The video demonstrates the source relationship system with sample contacts. James’s customer conversations belong to Conversion Specialist; partner relationships belong to the optional Revenue Partnerships Program Manager. His live connections and approved playbooks are verified during setup.
+**Text messaging is a bonus.** Add consented SMS conversations in GoHighLevel when James wants that channel and its sender setup is ready. The cold-email workflow can run independently.
 
-## Your outbound, connected from beginning to end
-
-This is the operating system around the agent: campaign strategy, lead data, verification, personalized copy, independent review, sequencing, reply handling, CRM updates, and follow-through.
-
-Start with a list you already own, or choose a sourcing tool. Prepare a campaign in Instantly or Smartlead. When someone replies, stop the sequence, preserve the conversation, and hand the lead to GoHighLevel. The relationship layer gives the next agent the person’s context, preferences, and open commitments before it writes another message.
-
-Run it on your own [Orgo computer](https://orgo.ai?r=aiguy) or a DigitalOcean VPS. Use Slack to work with the system, review decisions, and keep track of what happens next.
-
-| Prepare the campaign | Handle the reply | Continue the relationship |
-|---|---|---|
-| Define the offer and audience | Stop the active sequence | Create a contextual contact card |
-| Source or import leads | Classify intent and honor opt-outs | Maintain the linked context graph |
-| Verify, deduplicate, and research | Draft a relevant response | Continue permitted email/SMS conversations |
-| Write and independently review | Pass an acknowledged CRM handoff | Qualify, book, and follow through |
+Run on an [Orgo computer](https://orgo.ai?r=aiguy) or a DigitalOcean VPS, with Slack as an optional owner control channel. [Explore the full workflow →](docs/WORKFLOW.md)
 
 ## Start with one message
 
@@ -52,13 +41,14 @@ Paste this into **Claude Code**:
 Install https://github.com/jbellsolutions/james-camp-ai-guy-gtm for James Camp.
 Read AGENTS.md and START-HERE.md. Walk me through the business choices,
 then handle the technical setup on my chosen Orgo computer or VPS.
-Install Cold Email, Conversations & Conversion, or both. Reuse my accounts,
+Prioritize Cold Email + CSO. Offer CRM conversion and text messaging as
+optional additions. Reuse my accounts,
 keep credentials private, and verify every selected connection before launch.
 ```
 
 The setup agent asks about your host, offer, data, sequencer, CRM, and Slack. A Chief Sales Officer oversees the workforce. It also offers optional sourcing connections, Composio, and Revenue Partnerships Program Manager. You make the business choices and complete private sign-ins; the agent handles the installation and checks. [Full handoff prompt →](HANDOFF.md)
 
-## Two installations. One workflow.
+## Cold email first. Add conversations when ready.
 
 | Installation | Your team | Responsibility |
 |---|---|---|
@@ -67,19 +57,6 @@ The setup agent asks about your host, offer, data, sequencer, CRM, and Slack. A 
 | **Optional Revenue Partnerships Program Manager** | +1 profile in Conversations | Partner recruiting, onboarding, activation, relationship management, and attribution review |
 
 Install either system independently or both together. Conversion Specialist adapts the relationship engine for customer qualification, personalized replies and consented SMS. Revenue Partnerships Program Manager uses the same engine for partners when enabled. The CSO oversees priorities, assignments and evidence across both installations. [Read the charters →](docs/AGENTS.md)
-
-```mermaid
-flowchart LR
-  A[Offer + audience] --> B[Source or upload]
-  B --> C[Verify + research]
-  C --> D[Write + review]
-  D --> E[Stage + release]
-  E --> F[Send + receive replies]
-  F --> G[Stop sequence + triage]
-  G --> H[GoHighLevel + contact context]
-  H --> I[Permitted email / SMS]
-  I --> J[Qualified next step]
-```
 
 [Full workflow and acceptance gates →](docs/WORKFLOW.md)
 
@@ -133,6 +110,8 @@ Build a partner program around contextual relationships: discover and qualify pa
 The packaged optional profile uses the [Affiliate Manager source repository](https://github.com/jbellsolutions/affiliate-manager-agent). [True Revenue Partner](https://github.com/jbellsolutions/true-revenue-partner) is the expanded relationship program builder, with living cards and partner-program playbooks.
 
 **[Explore the relationship engine →](https://github.com/jbellsolutions/affiliate-manager-agent)** · [Explore True Revenue Partner →](https://github.com/jbellsolutions/true-revenue-partner) · [Read the client charter](profiles/affiliate-manager/CHARTER.md)
+
+**[Open the Revenue Partnerships Program Manager page and video →](docs/REVENUE-PARTNERSHIPS.md)**
 
 *Affiliate Manager source is public; True Revenue Partner requires repository access. Enable the packaged role with `--affiliate`; the stable profile ID remains `affiliate-manager`.*
 

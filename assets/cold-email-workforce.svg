@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="720" viewBox="0 0 1440 720" role="img" aria-labelledby="title desc">
+<title id="title">The AI Guy cold email workforce</title><desc id="desc">CSO oversight coordinates sourcing, verification, writing, review, campaign launch, reply handling and CRM conversion. Consented SMS is an optional bonus.</desc>
+<defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#091a24"/><stop offset="1" stop-color="#16313c"/></linearGradient><marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0 0L6 3L0 6" fill="none" stroke="#6ce6c6" stroke-width="1.5"/></marker></defs>
+<rect width="1440" height="720" rx="24" fill="url(#bg)"/>
+<g font-family="Arial,Helvetica,sans-serif">
+<text x="54" y="59" fill="#6ce6c6" font-size="14" letter-spacing="3" font-weight="700">AI GUY / GO-TO-MARKET WORKFORCE</text>
+<text x="54" y="114" fill="#f5f8fa" font-size="43" font-weight="700">Cold email, from lead list to qualified reply.</text>
+<text x="54" y="151" fill="#afc5cf" font-size="20">Specialist roles. Clear handoffs. Evidence at every step.</text>
+<rect x="54" y="182" width="1332" height="64" rx="14" fill="#20414a" stroke="#6ce6c6" stroke-opacity=".35"/>
+<text x="80" y="220" fill="#6ce6c6" font-size="20" font-weight="700">CSO + CAMPAIGN DIRECTOR</text><text x="459" y="220" fill="#dceaf0" font-size="19">Priorities · launch readiness · owners · receipts · daily review</text>
+<g fill="#16343f" stroke="#4d7280" stroke-opacity=".6">
+<rect x="54" y="285" width="298" height="119" rx="15"/><rect x="398" y="285" width="298" height="119" rx="15"/><rect x="742" y="285" width="298" height="119" rx="15"/><rect x="1086" y="285" width="300" height="119" rx="15"/>
+<rect x="54" y="457" width="408" height="119" rx="15"/><rect x="516" y="457" width="408" height="119" rx="15"/><rect x="978" y="457" width="408" height="119" rx="15"/>
+</g>
+<g fill="#6ce6c6" font-size="13" font-weight="700" letter-spacing="2">
+<text x="77" y="317">01 / SOURCE</text><text x="421" y="317">02 / VERIFY</text><text x="765" y="317">03 / WRITE</text><text x="1109" y="317">04 / REVIEW</text>
+<text x="77" y="489">05 / LAUNCH</text><text x="539" y="489">06 / HANDLE REPLIES</text><text x="1001" y="489">07 / CONVERT</text>
+</g>
+<g fill="#f5f8fa" font-size="23" font-weight="700">
+<text x="77" y="351">The right audience</text><text x="421" y="351">A clean, eligible list</text><text x="765" y="351">Relevant email copy</text><text x="1109" y="351">Independent quality</text>
+<text x="77" y="523">Instantly or Smartlead</text><text x="539" y="523">Stop, classify, respond</text><text x="1001" y="523">CRM + qualified next step</text>
+</g>
+<g fill="#afc5cf" font-size="17">
+<text x="77" y="381">Upload a list or research leads</text><text x="421" y="381">Verify · dedupe · suppress</text><text x="765" y="381">Personalize with sourced facts</text><text x="1109" y="381">Exact copy + sender clearance</text>
+<text x="77" y="553">Paused staging → approved release</text><text x="539" y="553">Opt-outs first · durable handoff</text><text x="1001" y="553">Context · qualification · follow-through</text>
+</g>
+<g stroke="#6ce6c6" fill="none" stroke-width="2" marker-end="url(#arrow)">
+<path d="M360 345H390"/><path d="M704 345H734"/><path d="M1048 345H1078"/>
+<path d="M1236 412V430H258V449"/><path d="M470 517H508"/><path d="M932 517H970"/>
+</g>
+<rect x="54" y="618" width="1332" height="62" rx="14" fill="#d9bd81" fill-opacity=".09" stroke="#d9bd81" stroke-opacity=".4"/>
+<text x="80" y="656" fill="#e9cf99" font-size="18" font-weight="700">BONUS / SMS CONVERSATIONS</text><text x="432" y="656" fill="#dceaf0" font-size="18">Continue by text in GoHighLevel when consent and sender readiness are verified.</text>
+</g></svg>

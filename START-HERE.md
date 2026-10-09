@@ -1,5 +1,7 @@
 # Guided self-install
 
+Start with the [complete requirements checklist](docs/READY-TO-RUN.md) and [toolkit inventory](docs/TOOLKIT.md). This is the go-to-market workforce: CSO, campaign team, Conversion Specialist and optional Affiliate Manager.
+
 The setup agent does the work. James supplies business decisions, private credentials and account consent.
 
 1. Read charters/PROJECT.md, docs/TEAM-CONTRACT.md and docs/SOURCES.md. Confirm GitHub access (`gh auth status`); if absent, guide browser/device authentication. Install GitHub CLI on the selected target using official instructions if authorized; on James’s own computer get authorization before adding system tools.
@@ -13,4 +15,4 @@ The setup agent does the work. James supplies business decisions, private creden
 9. Offer optional Composio. Use its installed CLI or official install procedure; authenticate privately, connect only selected apps and accounts, inspect schemas before writes. It is an optional connection path, not a second executor.
 10. Configure authenticated event delivery or polling reconciliation for the chosen sequencer and GHL. Read docs/EVENTS.md. Verify duplicate replay, immediate sequence stop, opt-out, durable CRM retry, context brief and unknown send reconciliation. Provider auth/capabilities determine the adapter; do not expose the normalized bridge directly to arbitrary unsigned provider posts.
 11. Ask: “Would you also like Affiliate Manager to manage partner relationships, connections, context and personalized communication?” Enable the optional profile on the conversation stack, using the same cards and sender ownership. No need for a third installation.
-12. Complete docs/ACCEPTANCE.md. Deliver templates/COMPLETION.md with evidence. External launch needs a recorded scope covering list version, exact copy, sender, provider campaign, windows, caps, budget, reply playbook and expiry. Existing approved scope counts; do not ask again for covered actions.
+12. Configure CSO coverage, source mappings and review schedule with docs/CSO.md. Verify its daily brief and assignment/receipt loop. Cross-install dispatch and journal synchronization require explicit verified mappings; they are not enabled automatically. Complete docs/ACCEPTANCE.md. Deliver templates/COMPLETION.md with evidence. External launch needs a recorded scope covering list version, exact copy, sender, provider campaign, windows, caps, budget, reply playbook and expiry. Existing approved scope counts; do not ask again for covered actions.

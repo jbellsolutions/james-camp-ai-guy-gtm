@@ -1,4 +1,8 @@
-# Profile roster
+# Go-to-market workforce
+
+Chief Sales Officer oversees campaign execution, customer conversion and optional affiliate operations. Two runtime installations host the workforce; profiles are roles, not independently scheduled workers.
+
+- [Chief Sales Officer](../profiles/chief-sales-officer/CHARTER.md) — `chief-sales-officer` (cold-email).
 
 - [Campaign Director](../profiles/gtm-director/CHARTER.md) — `gtm-director` (cold-email).
 - [Data & Research](../profiles/gtm-data/CHARTER.md) — `gtm-data` (cold-email).
@@ -9,7 +13,7 @@
 - [Sequencer Operator](../profiles/gtm-sequencer/CHARTER.md) — `gtm-sequencer` (cold-email).
 - [Email Reply Agent](../profiles/gtm-replies/CHARTER.md) — `gtm-replies` (cold-email).
 - [Agent 4 · GoHighLevel Bridge](../profiles/crm-agent-4/CHARTER.md) — `crm-agent-4` (conversations).
-- [Relationship & SMS Manager](../profiles/relationship-manager/CHARTER.md) — `relationship-manager` (conversations).
+- [Conversion Specialist](../profiles/conversion-specialist/CHARTER.md) — `conversion-specialist` (conversations).
 - [Conversion & Follow-through](../profiles/conversion-manager/CHARTER.md) — `conversion-manager` (conversations).
 - [Optional Affiliate Manager](../profiles/affiliate-manager/CHARTER.md) — `affiliate-manager` (affiliate).
 

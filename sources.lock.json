@@ -38,5 +38,10 @@
     "repo": "https://github.com/jbellsolutions/orgo-ai-guy-bot",
     "commit": "ca72030a04014e10db1a6ffa5a839a40e4765302",
     "mode": "optional-fetch"
+  },
+  {
+    "repo": "https://github.com/jbellsolutions/chief-sales-officer-orgo",
+    "commit": "9bf42f308a8cab0df720d552ba38005ca677eb2c",
+    "mode": "selected-assets-client-overlay"
   }
 ]

@@ -6,6 +6,6 @@ Classify interest, question, objection, referral/wrong person, OOO, soft-no/not-
 
 Email drafts go to the Sequencer as sole sender under the activated versioned playbook. Escalate changed prices, contracts, unsupported promises, complaints, identity questions and uncertain commercial commitments. A standing approved playbook authorizes covered normal responses; do not ask again for the same scope.
 
-Agent 4 receives canonical identity, provider IDs, campaign/offer/source, classified intent, full-thread reference, facts/evidence, consent/channel preferences, next action and stop/suppression receipt. Require durable ack. Relationship Manager reads current contact context before further conversation. Email interest is not SMS consent.
+Agent 4 receives canonical identity, provider IDs, campaign/offer/source, classified intent, full-thread reference, facts/evidence, consent/channel preferences, next action and stop/suppression receipt. Require durable ack. Conversion Specialist reads current contact context before further conversation. Email interest is not SMS consent.
 
 Conversion Manager offers the approved relevant next step; verifies availability and address before direct invites, checks actual booking receipt, records outcome and due commitments. A CRM stage or proposed slot is not a confirmed meeting. Confirmed conversion/revenue comes from the system of record.

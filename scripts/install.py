@@ -23,7 +23,7 @@ def prepare(mode,state,affiliate=False):
     manifest=state/'assets-manifest.json';previous=json.loads(manifest.read_text()) if manifest.exists() else {};current=dict(previous);conflicts=[]
     selected=['cold-email','conversations'] if mode=='both' else [mode]
     roster=json.loads((ROOT/'profiles/manifest.json').read_text())
-    defaults={'cold-email':('gtm-director',18789,9900),'conversations':('relationship-manager',18790,9901)}
+    defaults={'cold-email':('chief-sales-officer',18789,9900),'conversations':('conversion-specialist',18790,9901)}
     cfg={'model':{'provider':'custom','default':'accounts/fireworks/models/deepseek-v4-pro','base_url':'https://api.fireworks.ai/inference/v1','key_env':'FIREWORKS_API_KEY'},'approvals':{'mode':'manual'},'privacy':{'redact_pii':True},'security':{'redact_secrets':True},'agent':{'max_turns':60,'verify_on_stop':True},'gateway':{'platforms':{'slack':{'enabled':False},'telegram':{'enabled':False},'a2a':{'enabled':False}}},'platform_toolsets':{'cli':['terminal','file','web','browser','memory','skills','todo','clarify']},'terminal':{'cwd':'/vault'},'skills':{'write_approval':True,'guard_agent_created':True}}
     for install in selected:
         base=state/install;home=base/'hermes/data';home.mkdir(parents=True,exist_ok=True)
@@ -41,7 +41,7 @@ def prepare(mode,state,affiliate=False):
             for name in ['SOUL.md','CHARTER.md']:
                 text=(ROOT/'profiles'/p['id']/name).read_text().replace('../../docs/','')
                 generated(text,dest/name,previous,current,conflicts)
-            for name in ['WORKFLOW','TEAM-CONTRACT','SKILL-OVERLAY','CONTEXT-GRAPH']:
+            for name in ['WORKFLOW','TEAM-CONTRACT','SKILL-OVERLAY','CONTEXT-GRAPH','CSO']:
                 managed(ROOT/'docs'/(name+'.md'),dest/(name+'.md'),previous,current,conflicts)
             managed(ROOT/'charters/PROJECT.md',dest/'PROJECT.md',previous,current,conflicts)
             for skill in p['skills']:
@@ -53,8 +53,10 @@ def prepare(mode,state,affiliate=False):
             if install=='conversations':
                 profile_config['mcp_servers']={'relationships':{'command':'python3','args':['-m','relcore.mcp_server','--mode','plugin'],'env':{'PYTHONPATH':'/opt/james-gtm/vendor/affiliate-manager-agent','RELCORE_MODE':'plugin','RELCORE_HOME':'/opt/data/relationship','RELCORE_VAULT':'/vault','RELCORE_STOP_FILE':'/opt/data/EXTERNAL_WRITES_STOPPED','RELCORE_EMPLOYEE':p['id']},'trust':'untrusted','enabled':True}}
             if not (dest/'config.yaml').exists():generated(json.dumps(profile_config,indent=2)+'\n',dest/'config.yaml',previous,current,conflicts)
+        if install=='cold-email':
+            generated((ROOT/'config/cso-integration.example.json').read_text(),home/'cso/integration.json',previous,current,conflicts)
         supervisor=home/'profiles'/defaults[install][0]
-        for name in ['SOUL.md','CHARTER.md','PROJECT.md','WORKFLOW.md','TEAM-CONTRACT.md','SKILL-OVERLAY.md','CONTEXT-GRAPH.md','config.yaml']:
+        for name in ['SOUL.md','CHARTER.md','PROJECT.md','WORKFLOW.md','TEAM-CONTRACT.md','SKILL-OVERLAY.md','CONTEXT-GRAPH.md','CSO.md','config.yaml']:
             if name!='config.yaml' or not (home/name).exists():managed(supervisor/name,home/name,previous,current,conflicts)
         for f in (supervisor/'skills').rglob('*'):
             if f.is_file():managed(f,home/'skills'/f.relative_to(supervisor/'skills'),previous,current,conflicts)

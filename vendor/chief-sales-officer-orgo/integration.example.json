@@ -1,0 +1,62 @@
+{
+  "enabled": false,
+  "crm": {
+    "provider": "confirm-attio-or-itl",
+    "writer": "Attio CRM Operator",
+    "object_ids": {},
+    "stages": {}
+  },
+  "tasks": {
+    "provider": "clickup",
+    "writer": "ClickUp Operator",
+    "list_id": null
+  },
+  "sources": {
+    "email_inbound": {
+      "enabled": false,
+      "account": null,
+      "watermark": null
+    },
+    "email_outbound": {
+      "enabled": false,
+      "account": null,
+      "watermark": null
+    },
+    "linkedin": {
+      "enabled": false,
+      "account": null,
+      "watermark": null
+    },
+    "calendar": {
+      "enabled": false,
+      "account": null,
+      "watermark": null
+    },
+    "calls": {
+      "enabled": false,
+      "account": null,
+      "watermark": null
+    },
+    "ai-go-to-market": {
+      "enabled": false,
+      "account": null,
+      "watermark": null
+    },
+    "revenue-partner": {
+      "enabled": false,
+      "account": null,
+      "watermark": null
+    }
+  },
+  "slack": {
+    "channel_id": null,
+    "allowed_user_ids": [],
+    "quiet_hours_timezone": "America/New_York"
+  },
+  "proof": {
+    "url": null,
+    "publisher": null,
+    "consent_required": true
+  },
+  "quotas": []
+}

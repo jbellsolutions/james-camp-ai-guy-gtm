@@ -1,0 +1,65 @@
+{
+  "enabled": false,
+  "crm": {
+    "provider": "gohighlevel",
+    "writer": "crm-agent-4",
+    "location_id": null,
+    "object_ids": {},
+    "stages": {}
+  },
+  "tasks": {
+    "provider": "durable-assignments",
+    "writer": "chief-sales-officer",
+    "dispatch_verified": false
+  },
+  "sources": {
+    "email_inbound": {
+      "enabled": false,
+      "account": null,
+      "watermark": null
+    },
+    "email_outbound": {
+      "enabled": false,
+      "account": null,
+      "watermark": null
+    },
+    "linkedin": {
+      "enabled": false,
+      "account": null,
+      "watermark": null
+    },
+    "calendar": {
+      "enabled": false,
+      "account": null,
+      "watermark": null
+    },
+    "calls": {
+      "enabled": false,
+      "account": null,
+      "watermark": null
+    },
+    "ai-go-to-market": {
+      "enabled": false,
+      "account": null,
+      "watermark": null,
+      "maps_to": "campaign-and-conversion-receipts"
+    },
+    "revenue-partner": {
+      "enabled": false,
+      "account": null,
+      "watermark": null,
+      "maps_to": "optional-affiliate-manager"
+    }
+  },
+  "slack": {
+    "channel_id": null,
+    "allowed_user_ids": [],
+    "quiet_hours_timezone": "America/New_York"
+  },
+  "proof": {
+    "url": null,
+    "publisher": null,
+    "consent_required": true
+  },
+  "quotas": []
+}

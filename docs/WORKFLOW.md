@@ -2,7 +2,8 @@
 
 ```mermaid
 flowchart TD
-  A[James: offer, ICP, proof, limits] --> B[Campaign Director: attack plan]
+  A[James: offer, ICP, proof, limits] --> CSO[CSO: priorities, owners, evidence]
+  CSO --> B[Campaign Director: attack plan]
   B --> C{Existing leads?}
   C -->|Upload| D[List Manager]
   C -->|Source| E[Data Agent: API/Data Box/BrowserBox]
@@ -17,7 +18,7 @@ flowchart TD
   L --> M[Reply Agent: stop sequence and classify]
   M --> N[Opt-out: suppress immediately]
   M --> O[Agent 4: acknowledged CRM handoff]
-  O --> P[Relationship Manager: cards and context graph]
+  O --> P[Conversion Specialist: cards and context graph]
   P --> Q{SMS consent known?}
   Q -->|No| R[Stay on permitted channel; request preference]
   Q -->|Yes| S[Contextual SMS under active playbook]
@@ -40,7 +41,7 @@ flowchart TD
 | Monitor | Director/ESP | Provider metrics and holds; no open-rate optimization as final outcome |
 | Reply | Reply Agent | Inbound dedupe, immediate stop receipt; opt-out overrides classification |
 | CRM | Agent 4 | Contact/opportunity mapping, full-thread reference, next owner and ack |
-| Context | Relationship Manager | Card, brief digest, facts vs assumptions, consent/channel/preferences and open loops |
+| Context | Conversion Specialist | Card, brief digest, facts vs assumptions, consent/channel/preferences and open loops |
 | Conversation | Relationship/Conversion | Answer actual question, avoid reasking, honor no/not-now, escalate novel commitments |
 | Outcome | Conversion/Director | Authoritative appointment/conversion receipt and denominator-aware scorecard |
 

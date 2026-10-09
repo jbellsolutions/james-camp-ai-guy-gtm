@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="480" viewBox="0 0 1440 480" role="img" aria-labelledby="title desc">
+<title id="title">AI Guy Go-to-Market — built for James Camp</title>
+<desc id="desc">One connected workflow from cold email to contextual CRM and SMS conversations. Runs on Orgo or a VPS.</desc>
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#071720"/><stop offset="1" stop-color="#142b36"/></linearGradient>
+  <linearGradient id="line" x1="0" x2="1"><stop stop-color="#69e6c2"/><stop offset="1" stop-color="#e1c997"/></linearGradient>
+  <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#ffffff" stroke-opacity=".025"/></pattern>
+</defs>
+<rect width="1440" height="480" rx="22" fill="url(#bg)"/>
+<rect width="1440" height="480" rx="22" fill="url(#grid)"/>
+<path d="M62 49H98M62 49V85" fill="none" stroke="#69e6c2" stroke-width="3"/>
+<text x="119" y="73" fill="#d5e8ed" font-family="Arial,Helvetica,sans-serif" font-size="18" font-weight="700" letter-spacing="4">AI GUY / GO-TO-MARKET</text>
+<text x="64" y="127" fill="#69e6c2" font-family="Arial,Helvetica,sans-serif" font-size="13" letter-spacing="3">BUILT FOR JAMES CAMP</text>
+<text x="60" y="201" fill="#f7f8f4" font-family="Arial,Helvetica,sans-serif" font-size="58" font-weight="700" letter-spacing="-2">From the first email</text>
+<text x="60" y="270" fill="#f7f8f4" font-family="Arial,Helvetica,sans-serif" font-size="58" font-weight="700" letter-spacing="-2">to the next conversation.</text>
+<text x="64" y="317" fill="#a8bdc5" font-family="Arial,Helvetica,sans-serif" font-size="19">The campaign, the reply, and the relationship — connected.</text>
+<g font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="700" letter-spacing="1.4">
+ <rect x="64" y="377" width="144" height="36" rx="18" fill="#69e6c2" fill-opacity=".11" stroke="#69e6c2" stroke-opacity=".3"/><text x="86" y="400" fill="#8cefd0">COLD EMAIL</text>
+ <rect x="221" y="377" width="132" height="36" rx="18" fill="#ffffff" fill-opacity=".04" stroke="#ffffff" stroke-opacity=".13"/><text x="244" y="400" fill="#d5e8ed">CRM + SMS</text>
+ <rect x="367" y="377" width="176" height="36" rx="18" fill="#ffffff" fill-opacity=".04" stroke="#ffffff" stroke-opacity=".13"/><text x="389" y="400" fill="#d5e8ed">CONTEXT GRAPH</text>
+ <rect x="557" y="377" width="154" height="36" rx="18" fill="#ffffff" fill-opacity=".04" stroke="#ffffff" stroke-opacity=".13"/><text x="579" y="400" fill="#d5e8ed">ORGO OR VPS</text>
+</g>
+<g transform="translate(914 130)" font-family="Arial,Helvetica,sans-serif">
+ <path d="M24 33V242" fill="none" stroke="url(#line)" stroke-width="2"/>
+ <g><circle cx="24" cy="24" r="9" fill="#69e6c2"/><rect x="59" y="0" width="331" height="64" rx="12" fill="#183b42" stroke="#69e6c2" stroke-opacity=".35"/><text x="80" y="26" font-size="12" fill="#69e6c2" letter-spacing="2">01 / PREPARE</text><text x="80" y="48" font-size="17" fill="#eef6f4">Find, verify, and write.</text></g>
+ <g transform="translate(0 90)"><circle cx="24" cy="24" r="9" fill="#a5dec4"/><rect x="59" y="0" width="331" height="64" rx="12" fill="#1d3640" stroke="#a5dec4" stroke-opacity=".25"/><text x="80" y="26" font-size="12" fill="#a5dec4" letter-spacing="2">02 / ENGAGE</text><text x="80" y="48" font-size="17" fill="#eef6f4">Launch, listen, and hand off.</text></g>
+ <g transform="translate(0 180)"><circle cx="24" cy="24" r="9" fill="#e1c997"/><rect x="59" y="0" width="331" height="64" rx="12" fill="#2a3b3e" stroke="#e1c997" stroke-opacity=".3"/><text x="80" y="26" font-size="12" fill="#e1c997" letter-spacing="2">03 / CONTINUE</text><text x="80" y="48" font-size="17" fill="#eef6f4">Remember, respond, and convert.</text></g>
+</g>
+<path d="M1345 430H1380M1380 395V430" fill="none" stroke="#e1c997" stroke-width="2"/>
+</svg>

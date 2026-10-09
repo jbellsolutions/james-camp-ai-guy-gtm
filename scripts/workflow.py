@@ -36,7 +36,7 @@ def ingest(c,e):
             work.extend([('gtm-sequencer' if e['channel']=='email' else 'crm-agent-4','suppress_provider',0),('crm-agent-4','suppress_crm',0)])
         else:
             suppressed=c.execute('SELECT 1 FROM suppression WHERE client=? AND contact=?',(e['client'],e['contact'].strip().lower())).fetchone()
-            if not suppressed:work.append(('gtm-replies' if e['channel']=='email' else 'relationship-manager','triage_reply',1))
+            if not suppressed:work.append(('gtm-replies' if e['channel']=='email' else 'conversion-specialist','triage_reply',1))
         work.append(('crm-agent-4','context_handoff',2))
         for owner,action,priority in work:c.execute('INSERT OR IGNORE INTO tasks(event_id,owner,action,priority) VALUES(?,?,?,?)',(eid,owner,action,priority))
     return {'event_id':eid,'blocked':blocked,'tasks':len(work)}

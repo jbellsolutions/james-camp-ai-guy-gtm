@@ -1,0 +1,149 @@
+{
+  "disclosure": "Orgo is the verified AI Guy referral link. Other links are official provider URLs until owner-supplied affiliate links are verified.",
+  "services": [
+    {
+      "id": "orgo",
+      "name": "Orgo",
+      "official_url": "https://orgo.ai/",
+      "affiliate_url": "https://orgo.ai?r=aiguy",
+      "purpose": "Agent computer",
+      "connection_status": "Standard Linux runtime route; inspect capacity and access"
+    },
+    {
+      "id": "digitalocean",
+      "name": "DigitalOcean",
+      "official_url": "https://www.digitalocean.com/",
+      "affiliate_url": null,
+      "purpose": "Linux VPS",
+      "connection_status": "Standard Linux runtime route; authorize capacity"
+    },
+    {
+      "id": "fireworks",
+      "name": "Fireworks",
+      "official_url": "https://fireworks.ai/",
+      "affiliate_url": null,
+      "purpose": "Model inference",
+      "connection_status": "Included runtime default; private key and inference test"
+    },
+    {
+      "id": "instantly",
+      "name": "Instantly",
+      "official_url": "https://instantly.ai/",
+      "affiliate_url": null,
+      "purpose": "Cold email",
+      "connection_status": "Bundled skill/scripts; account, staging and event connection required"
+    },
+    {
+      "id": "smartlead",
+      "name": "Smartlead",
+      "official_url": "https://www.smartlead.ai/",
+      "affiliate_url": null,
+      "purpose": "Cold email",
+      "connection_status": "Bundled operations guidance; verify current API and connection"
+    },
+    {
+      "id": "plusvibe",
+      "name": "PlusVibe",
+      "official_url": "https://plusvibe.ai/",
+      "affiliate_url": null,
+      "purpose": "Optional client sequencer",
+      "connection_status": "Discovery-on-request; no turnkey adapter or verified MCP"
+    },
+    {
+      "id": "gohighlevel",
+      "name": "GoHighLevel",
+      "official_url": "https://www.gohighlevel.com/",
+      "affiliate_url": null,
+      "purpose": "CRM and permitted SMS",
+      "connection_status": "Bundled CLI/MCP; scoped location and live tests required"
+    },
+    {
+      "id": "consulti",
+      "name": "Consulti",
+      "official_url": "https://www.consulti.ai/",
+      "affiliate_url": null,
+      "purpose": "Leads, verification and outbound options",
+      "connection_status": "Optional discovery; dedicated adapter not bundled"
+    },
+    {
+      "id": "firecrawl",
+      "name": "Firecrawl",
+      "official_url": "https://www.firecrawl.dev/",
+      "affiliate_url": null,
+      "purpose": "Web sourcing and extraction",
+      "connection_status": "Adapter exists in optional pinned Data Box source; fetch and probe"
+    },
+    {
+      "id": "moltsets",
+      "name": "MoltSets",
+      "official_url": "https://moltsets.com/",
+      "affiliate_url": null,
+      "purpose": "B2B data and enrichment",
+      "connection_status": "Adapter exists in optional pinned Data Box source; fetch and probe"
+    },
+    {
+      "id": "discolike",
+      "name": "DiscoLike",
+      "official_url": "https://discolike.com/",
+      "affiliate_url": null,
+      "purpose": "Company discovery",
+      "connection_status": "Optional sourcing discovery; inspect current API"
+    },
+    {
+      "id": "getleads",
+      "name": "GetLeads",
+      "official_url": "https://www.getleads.io/",
+      "affiliate_url": null,
+      "purpose": "Lead sourcing",
+      "connection_status": "Optional sourcing discovery; inspect current API"
+    },
+    {
+      "id": "apify",
+      "name": "Apify",
+      "official_url": "https://apify.com/",
+      "affiliate_url": null,
+      "purpose": "Scraping actors",
+      "connection_status": "Adapter exists in optional pinned Data Box source; select actors and probe"
+    },
+    {
+      "id": "brightdata",
+      "name": "Bright Data",
+      "official_url": "https://brightdata.com/",
+      "affiliate_url": null,
+      "purpose": "Web data infrastructure",
+      "connection_status": "Adapter exists in optional pinned Data Box source; inspect product and probe"
+    },
+    {
+      "id": "decodo",
+      "name": "Decodo",
+      "official_url": "https://decodo.com/",
+      "affiliate_url": null,
+      "purpose": "Scraping/proxy infrastructure",
+      "connection_status": "Optional sourcing discovery; inspect current API"
+    },
+    {
+      "id": "hyperbrowser",
+      "name": "Hyperbrowser",
+      "official_url": "https://www.hyperbrowser.ai/",
+      "affiliate_url": null,
+      "purpose": "Browser automation infrastructure",
+      "connection_status": "Optional sourcing discovery; inspect current API"
+    },
+    {
+      "id": "composio",
+      "name": "Composio",
+      "official_url": "https://composio.dev/",
+      "affiliate_url": null,
+      "purpose": "Optional account/tool connections",
+      "connection_status": "Bundled CLI guidance; private connection and schema probe"
+    },
+    {
+      "id": "slack",
+      "name": "Slack",
+      "official_url": "https://slack.com/",
+      "affiliate_url": null,
+      "purpose": "Owner control channel",
+      "connection_status": "Bundled manifests/helper; owner workspace installation required"
+    }
+  ]
+}

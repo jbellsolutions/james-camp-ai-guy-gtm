@@ -1,5 +1,15 @@
 [
   {
+    "id": "chief-sales-officer",
+    "install": "cold-email",
+    "title": "Chief Sales Officer",
+    "skills": [
+      "gtm-workflow",
+      "chief-sales-officer"
+    ],
+    "optional": false
+  },
+  {
     "id": "gtm-director",
     "install": "cold-email",
     "title": "Campaign Director",
@@ -93,9 +103,9 @@
     "optional": false
   },
   {
-    "id": "relationship-manager",
+    "id": "conversion-specialist",
     "install": "conversations",
-    "title": "Relationship & SMS Manager",
+    "title": "Conversion Specialist",
     "skills": [
       "gtm-workflow",
       "crm-conversations",

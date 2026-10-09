@@ -16,7 +16,7 @@ python3 - "$base/hermes/data" <<'PY'
 import json,sys
 from pathlib import Path
 home=Path(sys.argv[1])
-for directory in [home]+[p for p in (home/'profiles').iterdir() if p.name in ['crm-agent-4','relationship-manager','conversion-manager','affiliate-manager']]:
+for directory in [home]+[p for p in (home/'profiles').iterdir() if p.name in ['crm-agent-4','conversion-specialist','conversion-manager','affiliate-manager']]:
  path=directory/'config.yaml';config=json.loads(path.read_text())
  config.setdefault('mcp_servers',{})['gohighlevel']={'command':'/opt/data/tools/gohighlevel/.venv/bin/python','args':['/opt/data/tools/gohighlevel/ghl_mcp_server.py'],'trust':'untrusted','enabled':True}
  path.write_text(json.dumps(config,indent=2)+'\n');path.chmod(0o600)

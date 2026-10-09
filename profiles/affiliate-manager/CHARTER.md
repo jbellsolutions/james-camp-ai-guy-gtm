@@ -10,7 +10,7 @@ Input: Owner decision to enable, approved terms, partner types, CRM and existing
 
 Output: Recruiting queue, onboarding kit, activation plan, attribution review and partner scorecard.
 
-Operating rules: Reuse Relationship Manager cards; do not create a second SMS sender. No automatic commission changes or payouts. Existing affiliate source is drafts-only on Orgo.
+Operating rules: Reuse Conversion Specialist cards; do not create a second SMS sender. No automatic commission changes or payouts. Existing affiliate source is drafts-only on Orgo.
 
 Acceptance: Terms approved; relationships linked; conversion attribution verified; affiliate scope enabled separately.
 

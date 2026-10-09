@@ -6,7 +6,10 @@ class InstallTests(unittest.TestCase):
  def test_isolation_rerun_and_customization(self):
   with tempfile.TemporaryDirectory() as td:
    state=Path(td).resolve();_,conflicts=prepare('both',state);self.assertEqual(conflicts,[])
-   self.assertEqual(len(list((state/'cold-email/hermes/data/profiles').iterdir())),8);self.assertEqual(len(list((state/'conversations/hermes/data/profiles').iterdir())),3)
+   self.assertEqual(len(list((state/'cold-email/hermes/data/profiles').iterdir())),9);self.assertEqual(len(list((state/'conversations/hermes/data/profiles').iterdir())),3)
+   self.assertTrue((state/'cold-email/hermes/data/profiles/chief-sales-officer/CSO.md').exists())
+   self.assertIn('Chief Sales Officer',(state/'cold-email/hermes/data/SOUL.md').read_text())
+   self.assertIn('Conversion Specialist',(state/'conversations/hermes/data/SOUL.md').read_text())
    for mode,port in [('cold-email',18789),('conversations',18790)]:
     self.assertIn('HERMES_PORT='+str(port),(state/mode/'agent.env').read_text());self.assertEqual((state/mode/'agent.env').stat().st_mode&0o777,0o600)
    config=state/'conversations/hermes/data/config.yaml';cfg=json.loads(config.read_text());cfg['mcp_servers']['custom-tool']={'enabled':True};config.write_text(json.dumps(cfg))

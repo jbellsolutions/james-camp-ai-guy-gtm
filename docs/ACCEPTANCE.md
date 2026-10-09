@@ -18,3 +18,7 @@ Run scripts/check.py, all tests, prepare both installs in a temporary directory,
 - Emergency stop and backup/restore are verified using test state; no provider remains sending during stop. Document restart order and last good version.
 
 Mark each selected integration LIVE only after its gate passes. Mark unselected services UNCONNECTED. Mark missing credentials/permissions or unsupported runtime behavior BLOCKED with next owner. Static tests do not justify a LIVE label. Preserve existing approved authorizations; this checklist does not require redundant permission for covered tests.
+
+## CSO workforce acceptance
+
+Confirm CSO and Conversion Specialist default identities, designated assignments and source mappings. Verify source coverage, due-work review and a receipt-backed result; verify daily/weekly scheduling on the target if selected. Affiliate Manager is optional and remains separate from customer conversion. Local CSO journal and CRM synchronization need an explicitly verified mapping.

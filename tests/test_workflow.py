@@ -48,3 +48,9 @@ class WorkflowTests(unittest.TestCase):
   finally:other.close()
   workflow.ack(self.c,first['id'],{'status':'confirmed','external_id':'actual-provider-receipt'})
   self.assertIsNotNone(workflow.claim(self.c,'gtm-replies'))
+
+ def test_sms_reply_routes_to_customer_conversion(self):
+  workflow.ingest(self.c,dict(self.e,channel='sms',contact='+12025550100'))
+  self.assertEqual(len(workflow.tasks(self.c,'conversion-specialist')),1)
+  self.assertEqual(workflow.tasks(self.c,'affiliate-manager'),[])
+  self.assertEqual(workflow.tasks(self.c,'relationship-manager'),[])

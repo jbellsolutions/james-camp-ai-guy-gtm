@@ -23,9 +23,9 @@
 
 **Revenue Partnerships Program Manager** keeps the people, conversations, introductions and commitments connected. This narrated walkthrough shows the context cards and relationship graph behind the partner workflow.
 
-[![Watch the Revenue Partnerships Program Manager relationship-layer walkthrough](assets/relationship-video-poster.svg)](https://github.com/jbellsolutions/james-camp-ai-guy-gtm/raw/refs/heads/main/assets/video/relationship-layer-narrated.mp4)
+[![Watch the Revenue Partnerships Program Manager relationship-layer walkthrough](assets/relationship-video-poster.svg)](https://jbellsolutions.github.io/james-camp-ai-guy-gtm/)
 
-**[▶ Watch the narrated walkthrough · 2 min 38 sec](https://github.com/jbellsolutions/james-camp-ai-guy-gtm/raw/refs/heads/main/assets/video/relationship-layer-narrated.mp4)** · [Open the video file](assets/video/relationship-layer-narrated.mp4)
+**[▶ Watch the narrated walkthrough · 2 min 38 sec](https://jbellsolutions.github.io/james-camp-ai-guy-gtm/)** · [Open the video file](assets/video/relationship-layer-narrated.mp4)
 
 The video demonstrates the source relationship system with sample contacts. James’s customer conversations belong to Conversion Specialist; partner relationships belong to the optional Revenue Partnerships Program Manager. His live connections and approved playbooks are verified during setup.
 
